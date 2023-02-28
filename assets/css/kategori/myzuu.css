@@ -3,6 +3,13 @@ body {
     background: #fafafa;
 }
 
+.display {
+    display:grid;
+    max-width: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
 .boxmen {
     background: #f7f3ff;
     margin-left: 10px !important;
