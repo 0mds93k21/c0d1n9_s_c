@@ -253,7 +253,7 @@
     /*---------- End Loader ----------*/
 
 
-    /*---------- CSS PULSA ----------*/
+    /*---------- Home ----------*/
     *{
       font-family: 'Muli'
     }
@@ -536,6 +536,7 @@
       height: 100%; 
       width: 100%; 
       border-radius: 10px;
+      transition: 0.5s all ease-in-out;
     }
 
     .tutor:hover {
