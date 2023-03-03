@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kembali</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+
+    /*---------- Loader Elz Design ----------*/
+
+    .loadingspinner {
+      --square: 26px;
+      --offset: 30px;
+      --duration: 2.4s;
+      --delay: 0.2s;
+      --timing-function: ease-in-out;
+      --in-duration: 0.4s;
+      --in-delay: 0.1s;
+      --in-timing-function: ease-out;
+      width: calc( 3 * var(--offset) + var(--square));
+      height: calc( 2 * var(--offset) + var(--square));
+      padding: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .loadingspinner div {
+      display: inline-block;
+      background: #42a5f5;
+      border: none;
+      border-radius: 5px;
+      width: var(--square);
+      height: var(--square);
+      position: absolute;
+      padding: 0px;
+      margin: 0px;
+      font-size: 6pt;
+      color: black;
+    }
+
+    .loadingspinner #square1 {
+      left: calc( 0 * var(--offset) );
+      top: calc( 0 * var(--offset) );
+      animation: square1 var(--duration) var(--delay) var(--timing-function) infinite,
+      squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+    }
+
+    .loadingspinner #square2 {
+      left: calc( 0 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square2 var(--duration) var(--delay) var(--timing-function) infinite,
+      squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+    }
+
+    .loadingspinner #square3 {
+      left: calc( 1 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square3 var(--duration) var(--delay) var(--timing-function) infinite,
+      squarefadein var(--in-duration) calc(2 * var(--in-delay)) var(--in-timing-function) both;
+    }
+
+    .loadingspinner #square4 {
+      left: calc( 2 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square4 var(--duration) var(--delay) var(--timing-function) infinite,
+      squarefadein var(--in-duration) calc(3 * var(--in-delay)) var(--in-timing-function) both;
+    }
+
+    .loadingspinner #square5 {
+      left: calc( 3 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square5 var(--duration) var(--delay) var(--timing-function) infinite,
+      squarefadein var(--in-duration) calc(4 * var(--in-delay)) var(--in-timing-function) both;
+    }
+
+    @keyframes square1 {
+      0% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+
+      8.333% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      100% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+
+    @keyframes square2 {
+      0% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      8.333% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+
+      16.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+
+      25.00% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      83.33% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      91.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+
+      100% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    }
+
+    @keyframes square3 {
+      0%,100% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      16.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      25.00% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+
+      33.33% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+
+      41.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      66.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      75.00% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+
+      83.33% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+
+      91.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+
+    @keyframes square4 {
+      0% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      33.33% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      41.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+
+      50.00% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+
+      58.33% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      100% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+
+    @keyframes square5 {
+      0% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      50.00% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      58.33% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+
+      66.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+
+      75.00% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+
+      100% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+
+    @keyframes squarefadein {
+      0% {
+        transform: scale(0.75);
+        opacity: 0.0;
+      }
+
+      100% {
+        transform: scale(1.0);
+        opacity: 1.0;
+      }
+    }
+
+    /*---------- End Loader ----------*/
+
+
+    /*---------- CSS PULSA ----------*/
+    *{
+      font-family: 'Muli'
+    }
+
+    body {
+      background-color: #EDF1FC
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px
+    }
+
+    input {
+      border: none;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+    }
+
+    a, a:focus, a:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ::placeholder {
+      font-size: 13px;
+    }
+
+    .elz-bg-header {
+      background-color: #42a5f5;
+      height: 110px;
+      border-radius: 0px 0 50px 50px;
+    }
+
+    .elz-container-panel {
+      padding: 0 10px;
+      margin-top: -80px
+    }
+
+    .elz-panel-header {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px 1px;
+    }
+
+    .warn {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 35px
+    }
+
+    .input {
+      width: 100%
+    }
+
+    .form-input {
+      border: 1px solid #42a5f5;
+      border-radius: 5px;
+      font-size: 15px;
+      width: 100%;
+      position: relative;
+      z-index: 0;
+
+    }
+
+    .img-contact {
+      width: 40px;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #42a5f5;
+
+    }
+
+    .contact {
+      width: 20%
+    }
+
+    label {
+      font-size: 13px;
+    }
+
+    .label-input {
+      position: absolute;
+      margin-top: -20px;
+      font-weight: bold;
+      z-index: 1;
+      color: #777777
+    }
+
+    .btn-pulsa {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .btn-pulsa p {
+      font-size: 15px;
+      font-weight: normal;
+    }
+
+    .bg-pulsa-active{
+      background-color: #42a5f5;
+      pointer-events: none;
+      border-radius: 5px;
+      color: #fff;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-duration: var(--animate-duration);
+      animation-duration: var(--animate-duration);
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn
+
+
+    }
+
+    .pilihan-operator {
+      margin-top: 15px;
+    }
+
+    #namaOperator {
+      font-size:16px;
+      font-weight:bold
+    }
+
+    .pilihan-pulsa {
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.15) 0 0 5px 1px;
+      padding: 5px;
+      border-radius:  5px
+    }
+
+    .t-load {
+      font-size: 15px
+    }
+
+    .produk-none img {
+      width: 75%;
+      border-radius: 5px; 
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 1px;
+    }
+
+    .produk-none p {
+      font-size: 18px
+    }
+
+    .loading {
+      margin-top: 50px
+    }
+
+    .cerd {
+      background-image: url('https://img.freepik.com/free-vector/copy-space-wavy-white-background-layers_23-2148845469.jpg?w=2000');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 1px;
+    }
+
+    .nama-produk {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .harga-produk {
+      font-size: 16px;
+      color: #42a5f5
+    }
+
+    .bg-canvas {
+      background-color: #42a5f5;
+      color: white;
+    }
+
+    .offcanvas-bottom {
+      height: auto !important;
+    }
+
+    .rc {
+      font-size: 18px;
+    }
+
+    .indx {
+      font-size: 14px;
+      opacity: 0.7
+    }
+    .val {
+      font-size: 14px;
+    }
+    .dashed{
+      border-top: 2px dashed #8c8b8b;
+    }
+    .bo {
+      border-top: 2px solid #8c8b8b;
+    }
+
+    .btn-beli {
+      background-color: #42a5f5;
+      border: #42a5f5;
+      color: white;
+      border-radius: 5px;
+      font-size: 15px; 
+      text-transform: uppercase;
+      text-decoration: none; 
+      color: white
+    }
+    .btn-batal {
+      background-color: #808080;
+      border: #808080;
+      color: white;
+      border-radius: 5px;
+      font-size: 15px; 
+      text-transform: uppercase;
+    }
+    .pils-operator {
+      margin-bottom: 35px
+    }
+    .imgPulsa {
+      width: 35px;
+      padding: 5px;
+      background-color: #42a5f5;
+    }
+    .namaPulsa {
+      font-size: 16px;
+      font-weight: bold; 
+    }
+
+    /*---------- End CSS Pulsa ----------*/
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <section class="elz-header">
+    <div class="elz-bg-header"></div>
+    <div class="elz-container-panel">
+      <div class="elz-panel-header">
+        <!-- Operator -->
+        <div class="pils-operator animate__animated animate__fadeIn">
+          <p>
+            <img src="https://i.postimg.cc/fyJC4SPB/signal-1.png" class="imgPulsa rounded-circle">
+            <span class="ms-1 namaPulsa">Pulsa</span>
+          </p>
+        </div>
+        <!-- Input -->
+        <div class="d-flex justify-content-beetween">
+          <div class="d-block input">
+            <label for="first-input" class="label-input">Nomor Handphone</label>
+            <input type="tel" id="nomoTel" maxlength="20" class="form-input p-2 {{hasil_kontak}}" placeholder="Masukan nomor tujuan..." autocomplete="off">
+          </div>
+          <div class="d-block contact text-end">
+            <img src="https://i.postimg.cc/cH45ggkg/contact.png" onclick="getContact()" class="img-contact">
+          </div>
+        </div>
+        <!-- Operator -->
+        <div class="pilihan-operator animate__animated animate__fadeIn" id="box-operator">
+          <p>
+            <img width="35" id="imgOperator" class="rounded-circle">
+            <span id="namaOperator" class="ms-1"></span>
+          </p>
+        </div>
+      </div>
+      <!-- Pilihan -->
+      <div id="box-pilihan">
+        <div class="d-flex justify-content-beetween mt-3 pilihan-pulsa">
+          <div class="container btn-pulsa bg-pulsa-active text-center" id="reg"> 
+            <p class="p-1">REGULER</p>
+          </div>
+          <div class="container btn-pulsa text-center" id="tf">
+            <p class="p-1">TRANSFER</p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Data API -->
+  <section id="dataAPI" class="mt-4 container">
+
+  </section>
+
+
+  <!-- PopUp -->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="Id3" aria-labelledby="modalBottom">
+    <div class="bg-canvas d-flex justify-content-between px-3 py-3">
+      <div class="d-block">
+        <div class="d-flex">
+          <p class="rc">Rincian Pembelian </p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end" style="position: absolute; right: 20px">
+        <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="d-flex justify-content-between">
+        <p class="indx me-2">Produk</p>
+        <p class="val text-end" id="prod">Loading...</p>
+      </div>
+
+      <hr class="dashed">
+
+      <div class="d-flex justify-content-between">
+        <p class="indx me-2">Nomor Tujuan</p>
+        <p class="val" id="numb">Loading...</p>
+      </div>
+
+      <hr class="dashed">
+
+      <p class="indx">Deksripsi</p>
+      <p class="val mt-1" id="desc">Loading...</p>
+
+      <hr class="bo">
+
+      <div class="d-flex justify-content-between">
+        <p class="indx me-2">Harga</p>
+        <p class="val fw-bold" id="prc">Loading...</p>
+      </div>
+
+      <div class="d-flex justify-content-between mt-5" id="btls">
+
+        <button class="btn-batal px-3 py-2 w-100 me-3" data-bs-dismiss="offcanvas" aria-label="Close" id="btnBtl" >Batalkan</button>
+
+        <a id="btnBli" class="btn-beli px-3 py-2 w-100 text-center">Beli Sekarang</a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+
+    //---------- Pengaturan ----------//
+
+    // LINK TOKO
+    const urlToko = "https://myzuu.bukaolshop.site"
+
+    // AKTIVASI
+    const aktivasi = "myzuu"
+
+    // LINK KATEGORI
+    const urlKategori = [
+    {
+      "Indosat" :
+      {
+        "reguler" : "pulsa-indosat-411810",
+        "transfer": "indosat-pulsa-transf-411812",
+        "gambar" : "https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg",
+      },
+
+      "Telkomsel" : {
+        "reguler" : "telkomsel-reguler-349764",
+        "transfer": "telkomsel-transfer-350436",
+        "gambar" : "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
+      },
+
+      "Three" : {
+        "reguler" : "three-reguler-250838",
+        "transfer": "tri-pulsa-transfer-283782",
+        "gambar" : "https://i.postimg.cc/VkLmW5Y9/images-2022-10-07-T134356-702.jpg",
+      },
+
+      "XL Axiata" : {
+        "reguler" : "xl-reguler-250841",
+        "transfer": "xl-pulsa-transfer-283857",
+        "gambar" : "https://i.postimg.cc/rm2HgY16/download-3.jpg",
+      },
+
+      "Axis" : {
+        "reguler" : "axis-reguler-250833",
+        "transfer": "axis-pulsa-transfer-283765",
+        "gambar" : "https://i.postimg.cc/qRfqknKc/images-2022-10-07-T132537-156.jpg",
+      },
+
+      "Smartfren" : {
+        "reguler" : "smartfren-reguler-250835",
+        "transfer": "#",
+        "gambar" : "https://i.postimg.cc/nL9KR4Zq/IMG-20221007-135231.jpg",
+      },
+
+      "By.U" : {
+        "reguler" : "by-u-250843",
+        "transfer": "#",
+        "gambar" : "https://i.postimg.cc/brHn05dF/download-2.png",
+      },
+
+    }
+    ]
+
+
+
+
+    //---------- Jangan Dirubah ----------//
+
+    // Kontak
+    function getContact() {
+      window.location.href = urlToko+"/ambil_kontak"
+    }
+
+
+    // Loading
+    var loadAwal = `<div id="loads" class="loading">
+    <p id="text-load" class="fw-bold mt-2 text-center t-load">Masukan nomor yang valid terlebih dahulu...</p>
+    </div>`
+
+    var loads = `<div id="loads-2" class="loading">
+    <div class="loadingspinner">
+    <div id="square1"></div>
+    <div id="square2"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="square5"></div>
+    </div>
+    </div>`
+
+    var noSalah = `<div id="no-salah" class="container text-center produk-none animate__animated animate__fadeIn">
+    <img src="https://i.ibb.co/f8gVVGD/eror.jpg">
+    <p class="fw-bold mt-3">Nomor yang dimasukan salah nih...</p>
+    </div>` 
+
+    var produkNone  = `<div id="produk-none" class="text-center container produk-none animate__animated animate__fadeIn">
+    <img src="https://i.ibb.co/VwtjssF/digital-marketing.webp">
+    <p class="fw-bold mt-3">Sepertinya produk ini belum tersedia...</p>
+    </div>`
+
+    //---------- Data API ----------//
+
+    // Loop Produk
+    function loopProduk(data) {
+      $("#dataProduk").html("")
+
+      $.each(data, function(i, v){
+        var strHarga = v.harga.split("Rp")
+        var strProd = strHarga[1]
+        var hargaProd = `Rp ${strProd}`
+
+        $('#dataProduk').append(`<div class="col-6" style="margin-bottom:20px" data-bs-toggle="offcanvas" data-bs-target="#Id3" aria-controls="Id3" onclick="showDetail('${v.nama}','${hargaProd}','${v.url}')">
+          <div class="cerd">
+          <p class="nama-produk">${v.nama}</p>
+          <p class="harga-produk">${hargaProd}</p>
+          </div>
+          </div>`)
+      });
+    }
+
+    // Beli
+    function tombolBeli(link, isiCat) {
+     $("#btnBli").attr("href", link+"?catatan="+isiCat)
+   }
+
+
+    //---------- Operatoring ----------//
+
+    // Var Input & Change
+
+    // Clear
+    clrAll()
+    function clrAll(){
+      $("#img-operator").hide()
+      $("#box-operator").hide()
+      $("#box-pilihan").hide()
+      $("#dataAPI").html(loadAwal)
+      $("#img-operator").removeAttr("height")
+
+    } 
+
+    // Load Operator
+    function loadOperator(val) {
+      var imgOpera =  urlKategori[0][val].gambar
+      $("#box-operator").show()
+      $("#box-pilihan").show()
+      $("#imgOperator").attr("height", "35")
+      $("#imgOperator").attr("src", imgOpera)
+      $("#namaOperator").html(val)
+    }
+
+</script> 
+<script src="https://nielz.my.id/scriptelzdesign/pulsa.js"></script>
+</body>
+</html>
