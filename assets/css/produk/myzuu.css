@@ -466,9 +466,9 @@ label {
 }
 
 .btn-beli {
-  background-color: #42a5f5;
-  border: #42a5f5;
-  color: white;
+  background-color: #9442fe;
+  border: #9442fe;
+  color: #f7f3ff;
   border-radius: 5px;
   font-size: 15px;
   text-transform: uppercase;
@@ -477,9 +477,9 @@ label {
 }
 
 .btn-batal {
-  background-color: #808080;
-  border: #808080;
-  color: white;
+  background-color: #f7f3ff;
+  border: #f7f3ff;
+  color: #9442fe;
   border-radius: 5px;
   font-size: 15px;
   text-transform: uppercase;
