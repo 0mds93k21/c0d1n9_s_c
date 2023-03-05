@@ -3,6 +3,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url("https://cdn.jsdelivr.net/npm/axcon-npm@1.0.7/axcon.css");
 
+
 .loadingspinner {
     --square: 26px;
     --offset: 30px;
@@ -250,10 +251,7 @@
     }
 }
 
-/*---------- End Loader ----------*/
-
-
-/*---------- CSS PULSA ----------*/
+/*---------- CSS ----------*/
 * {
     font-family: 'Muli'
 }
@@ -304,13 +302,11 @@ a:hover {
 }
 
 .warn {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 35px
+    font-size: 15px
 }
 
 .input {
-    width: 130%
+    width: 100%
 }
 
 .form-input {
@@ -331,6 +327,10 @@ a:hover {
 
 }
 
+.contact-barcode {
+    margin: 0 5px
+}
+
 .contact {
     width: 20%
 }
@@ -341,7 +341,7 @@ label {
 
 .label-input {
     position: absolute;
-    margin-top: -20px;
+    margin-top: -25px;
     font-weight: bold;
     z-index: 1;
     color: #777777
@@ -372,7 +372,7 @@ label {
 }
 
 .pilihan-operator {
-    margin-top: 15px;
+    margin-bottom: 35px;
 }
 
 #namaOperator {
@@ -463,27 +463,58 @@ label {
     text-transform: uppercase;
     text-decoration: none;
     color: white
-}
-
-.btn-batal {
+  }
+  
+  .btn-batal {
     background-color: #f7f3ff;
     border: #f7f3ff;
     color: #9442fe;
     border-radius: 5px;
     font-size: 15px;
     text-transform: uppercase;
+  }
+
+.offcanvas-end {
+    width: 100% !important;
 }
 
-.pils-operator {
-    margin-bottom: 35px
+.bg-canvas-start {
+    background-color: #42a5f5;
+    color: #fff
 }
 
-.imgPulsa {
-    width: 45px;
-    padding: 5px;
+.bg-src {
+    background-color: transparent;
 }
 
-.namaPulsa {
-    font-size: 16px;
+.name-paket {
+    font-size: 18px
+}
+
+.cardkat {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+.cardkat p {
+    font-size: 13px;
     font-weight: bold;
+}
+
+#src {
+    font-size: 13px;
+    font-weight: bold
+}
+
+.val-cek {
+    color: #42a5f5
+}
+
+.pilih-wall {
+    font-size: 16px;
+    margin-top: 4px;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #42a5f5;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 1px;
 }
