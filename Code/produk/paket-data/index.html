@@ -319,9 +319,7 @@
     }
 
     .warn {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 35px
+      font-size: 15px
     }
 
     .input {
@@ -346,6 +344,10 @@
 
     }
 
+    .contact-barcode{
+      margin: 0 5px
+    }
+
     .contact {
       width: 20%
     }
@@ -356,7 +358,7 @@
 
     .label-input {
       position: absolute;
-      margin-top: -20px;
+      margin-top: -25px;
       font-weight: bold;
       z-index: 1;
       color: #777777
@@ -373,7 +375,6 @@
 
     .bg-pulsa-active{
       background-color: #42a5f5;
-      pointer-events: none;
       border-radius: 5px;
       color: #fff;
       -webkit-animation-duration: 1s;
@@ -389,7 +390,7 @@
     }
 
     .pilihan-operator {
-      margin-top: 15px;
+      margin-bottom: 35px;
     }
 
     #namaOperator {
@@ -450,6 +451,10 @@
       height: auto !important;
     }
 
+    .offcanvas-start {
+      width: 75% !important;
+    }
+
     .rc {
       font-size: 18px;
     }
@@ -486,19 +491,42 @@
       font-size: 15px; 
       text-transform: uppercase;
     }
-    .pils-operator {
-      margin-bottom: 35px
+    .offcanvas-end {
+      width: 100% !important;
     }
-    .imgPulsa {
-      width: 35px;
-      padding: 5px;
+    .bg-canvas-start {
       background-color: #42a5f5;
+      color: #fff
     }
-    .namaPulsa {
-      font-size: 16px;
+    .bg-src {
+      background-color: transparent;
+    }
+    .name-paket {
+      font-size: 18px
+    }
+    .cardkat, .cardSubkat {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+    }
+    .cardkat p, .cardSubkat p{
+      font-size: 13px;
       font-weight: bold; 
     }
-
+    #src {
+      font-size: 13px;
+      font-weight: bold
+    }
+    .val-cek {
+      color: #42a5f5
+    }
+    .pilih-wall {
+      font-size: 16px;
+      margin-top: 4px;
+      padding: 0 5px;
+      border-radius: 5px;
+      background-color: #42a5f5;
+      color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 1px;
+    }
     /*---------- End CSS Pulsa ----------*/
   </style>
 </head>
@@ -509,174 +537,347 @@
     <div class="elz-container-panel">
       <div class="elz-panel-header">
         <!-- Operator -->
-        <div class="pils-operator animate__animated animate__fadeIn">
-          <p>
-            <img src="https://i.postimg.cc/fyJC4SPB/signal-1.png" class="imgPulsa rounded-circle">
-            <span class="ms-1 namaPulsa">Pulsa</span>
-          </p>
-        </div>
-        <!-- Input -->
-        <div class="d-flex justify-content-beetween">
-          <div class="d-block input">
-            <label for="first-input" class="label-input">Nomor Handphone</label>
-            <input type="tel" id="nomoTel" maxlength="20" class="form-input p-2 {{hasil_kontak}}" placeholder="Masukan nomor tujuan..." autocomplete="off">
-          </div>
-          <div class="d-block contact text-end">
-            <img src="https://i.postimg.cc/cH45ggkg/contact.png" onclick="getContact()" class="img-contact">
-          </div>
-        </div>
-        <!-- Operator -->
         <div class="pilihan-operator animate__animated animate__fadeIn" id="box-operator">
-          <p>
-            <img width="35" id="imgOperator" class="rounded-circle">
-            <span id="namaOperator" class="ms-1"></span>
-          </p>
-        </div>
-      </div>
-      <!-- Pilihan -->
-      <div id="box-pilihan">
-        <div class="d-flex justify-content-beetween mt-3 pilihan-pulsa">
-          <div class="container btn-pulsa bg-pulsa-active text-center" id="reg"> 
-            <p class="p-1">UMUM</p>
+          <div class="d-flex justify-content-beetween">
+            <div style="width: 100%">
+              <p>
+                <img width="35" id="imgOperator" class="rounded-circle">
+                <span id="namaOperator" class="ms-1"></span>
+              </p>
+            </div>
+            <div style="width: 30%">
+              <p class="text-center pilih-wall" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">
+                <span>Pilih</span>
+                <i class="fa-solid fa-angles-right"></i></p>
+              </div>
+            </div>
           </div>
-          <div class="container btn-pulsa text-center" id="tf">
-            <p class="p-1">TRANSFER</p>
-          </div> 
+          <!-- Input -->
+          <div class="d-flex justify-content-beetween">
+            <div class="d-block input">
+              <label for="first-input" class="label-input">Nomor Handphone</label>
+              <input type="tel" id="nomoTel" maxlength="20" class="form-input p-2 {{hasil_kontak}} {{hasil_scan}}" placeholder="Masukan nomor tujuan..." autocomplete="off" oninput="cekInputan()" onchange="cekInputan()">
+            </div>
+            <div class="contact text-end">
+              <img src="https://i.postimg.cc/cH45ggkg/contact.png" onclick="getContact()" class="img-contact">
+            </div>
+          </div>
+        </div>
+        <!-- Pilihan -->
+        <div id="box-pilihan">
+          <div class="d-flex justify-content-beetween mt-3 pilihan-pulsa">
+            <div class="container btn-pulsa bg-pulsa-active" data-bs-toggle="offcanvas" data-bs-target="#Id4" aria-controls="Id4"> 
+              <p class="p-1 text-start">
+                <i class="fa-solid fa-list"></i>
+                <span id="nama-paket" class="ms-2"></span>
+              </p>
+            </div>
+            <div class="container btn-pulsa text-center"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne" style="width: 15%">
+              <p class="p-1"><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div> 
+          </div>
+        </div>
+        <!-- src -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item bg-src pt-2">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <input type="search" class="form-control fw-bold" placeholder="Cari Produk" id="search">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Data API -->
+    <section id="dataAPI" class="mt-4 container">
 
-  <!-- Data API -->
-  <section id="dataAPI" class="mt-4 container">
+    </section>
 
-  </section>
-
-
-  <!-- PopUp -->
-  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="Id3" aria-labelledby="modalBottom">
-    <div class="bg-canvas d-flex justify-content-between px-3 py-3">
-      <div class="d-block">
-        <div class="d-flex">
-          <p class="rc">Rincian Pembelian </p>
+    <!-- OffCanvas right -->
+    <div class="offcanvas offcanvas-end show" tabindex="-2" id="Id2" aria-labelledby="offcanvasRightLabel">
+     <div class="bg-canvas-start px-3 py-3">
+      <div class="d-flex justify-content-between">
+        <div class="d-block">
+          <div class="d-flex">
+            <p class="name-paket fw-bold">Voucher Paket Data</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end" style="position: absolute; right: 10px">
+          <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px; transform: rotate(270deg);" data-bs-dismiss="offcanvas" aria-label="Close"></i>
         </div>
       </div>
-      <div class="d-flex justify-content-end" style="position: absolute; right: 20px">
-        <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-      </div>
+      <input class="form-control form-lb mt-3 mb-2" placeholder="Cari Kategori Voucher Disini " id="src" type="search"/>
+
     </div>
-    <div class="offcanvas-body">
 
-      <div class="d-flex justify-content-between">
-        <p class="indx me-2">Produk</p>
-        <p class="val text-end" id="prod">Loading...</p>
+     <section class="offcanvas-body" id="katUtama">
+      <div class="cardkat py-2 mb-2" onclick="getValue(dataTsel)" data-bs-dismiss="offcanvas" aria-label="Close">
+        <p>
+          <img src="https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg" width="30" class="rounded-circle">
+          <span class="ms-1">Voucher Telkomsel</span>
+        </p>
+      </div>
+      <div class="cardkat py-2 mb-2" onclick="getValue(dataIsat)" data-bs-dismiss="offcanvas" aria-label="Close">
+        <p>
+          <img src="https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg" width="30" class="rounded-circle">
+          <span class="ms-1">Voucher Indosat</span>
+        </p>
+      </div>
+      <div class="cardkat py-2 mb-2" onclick="getValue(dataXL)" data-bs-dismiss="offcanvas" aria-label="Close">
+        <p>
+          <img src="https://i.postimg.cc/rm2HgY16/download-3.jpg" width="30" class="rounded-circle">
+          <span class="ms-1">Voucher XL</span>
+        </p>
+      </div>
+      <div class="cardkat py-2 mb-2" onclick="getValue(dataAxis)" data-bs-dismiss="offcanvas" aria-label="Close">
+        <p>
+          <img src="https://i.postimg.cc/qRfqknKc/images-2022-10-07-T132537-156.jpg" width="30" class="rounded-circle">
+          <span class="ms-1">Voucher Axis</span>
+        </p>
+      </div>
+      <div class="cardkat py-2 mb-2" onclick="getValue(dataThree)" data-bs-dismiss="offcanvas" aria-label="Close">
+        <p>
+          <img src="https://i.postimg.cc/VkLmW5Y9/images-2022-10-07-T134356-702.jpg" width="30" class="rounded-circle">
+          <span class="ms-1">Voucher Three</span>
+        </p>
+      </div>
+      <div class="cardkat py-2 mb-2" onclick="getValue(dataSfren)" data-bs-dismiss="offcanvas" aria-label="Close">
+        <p>
+          <img src="https://i.postimg.cc/nL9KR4Zq/IMG-20221007-135231.jpg" width="30" class="rounded-circle">
+          <span class="ms-1">Voucher Smartfren</span>
+        </p>
       </div>
 
-      <hr class="dashed">
 
-      <div class="d-flex justify-content-between">
-        <p class="indx me-2">Nomor Tujuan</p>
-        <p class="val" id="numb">Loading...</p>
-      </div>
+    </section>
 
-      <hr class="dashed">
-
-      <p class="indx">Deksripsi</p>
-      <p class="val mt-1" id="desc">Loading...</p>
-
-      <hr class="bo">
-
-      <div class="d-flex justify-content-between">
-        <p class="indx me-2">Harga</p>
-        <p class="val fw-bold" id="prc">Loading...</p>
-      </div>
-
-      <div class="d-flex justify-content-between mt-5" id="btls">
-
-        <button class="btn-batal px-3 py-2 w-100 me-3" data-bs-dismiss="offcanvas" aria-label="Close" id="btnBtl" >Batalkan</button>
-
-        <a id="btnBli" class="btn-beli px-3 py-2 w-100 text-center">Beli Sekarang</a>
-
-      </div>
-    </div>
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript">
+  <!-- OffCanvas Left -->
+  <div class="offcanvas offcanvas-start " tabindex="-1" id="Id4" aria-labelledby="offcanvasLeftLabel">
+   <div class="bg-canvas-start px-3 py-3">
+    <div class="d-flex justify-content-between">
+      <div class="d-block">
+        <div class="d-flex">
+          <p class="name-paket fw-bold"><span id="nameVoucher"></span></p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end" style="position: absolute; right: 10px">
+        <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px; transform: rotate(90deg);" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+      </div>
+    </div>
+    <input class="form-control form-lb mt-3 mb-2" placeholder="Cari Voucher Disini" id="src-kiri" type="search"/>
+
+  </div>
+
+  <section class="offcanvas-body" id="subKat">
+
+
+
+  </section>
+
+</div>
+
+
+<!-- PopUp -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="Id3" aria-labelledby="modalBottom">
+  <div class="bg-canvas d-flex justify-content-between px-3 py-3">
+    <div class="d-block">
+      <div class="d-flex">
+        <p class="rc">Rincian Pembelian </p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end" style="position: absolute; right: 20px">
+      <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+    </div>
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="d-flex justify-content-between">
+      <p class="indx me-2">Produk</p>
+      <p class="val text-end" id="prod">Loading...</p>
+    </div>
+
+    <hr class="dashed">
+
+    <div class="d-flex justify-content-between">
+      <p class="indx me-2">Nomor Tujuan</p>
+      <p class="val" id="numb">Loading...</p>
+    </div>
+
+    <hr class="dashed">
+
+    <p class="indx">Deksripsi</p>
+    <p class="val mt-1" id="desc">Loading...</p>
+
+    <hr class="bo">
+
+    <div class="d-flex justify-content-between">
+      <p class="indx me-2" id="harga">Harga</p>
+      <p class="val fw-bold" id="prc">Loading...</p>
+    </div>
+
+    <div class="d-flex justify-content-between mt-5" id="btls">
+
+      <button class="btn-batal px-3 py-2 w-100 me-3" data-bs-dismiss="offcanvas" aria-label="Close" id="btnBtl" >Batalkan</button>
+
+      <a id="btnBli" class="btn-beli px-3 py-2 w-100 text-center">Beli Sekarang</a>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
 
     //---------- Pengaturan ----------//
 
     // LINK TOKO
-    const urlToko = "https://myzuu.bukaolshop.site"
+    const urlToko = "https://avihzserver.bukaolshop.site"
 
     // AKTIVASI
-    const aktivasi = "myzuu"
+    const aktivasi = "efc4a75b9df6341bcf57c4f998d87b3000bdff3e1ae2fde12de452ff50c1c5b6"
 
-    // LINK KATEGORI
+
+    // LINK Kategori
     const urlKategori = [
     {
-      "Indosat" :
-      {
-        "reguler" : "pulsa-indosat-411810",
-        "transfer": "indosat-pulsa-transf-411812",
+      "Indosat" : {
+        "nama": "Voucher Indosat",
         "gambar" : "https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg",
+        "data": [
+
+        {
+          "nama": "",
+          "url": "",
+        },
+        {
+          "nama": "",
+          "url": "",
+        },
+
+        ]
       },
 
       "Telkomsel" : {
-        "reguler" : "telkomsel-reguler-349764",
-        "transfer": "telkomsel-transfer-350436",
+        "nama": "Voucher Telkomsel",  
         "gambar" : "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
+        "data": [
+
+        {
+          "nama": "Flash",
+          "url": "telkomsel-reguler-349764",
+        },
+        {
+          "nama": "Owsem",
+          "url": "telkomsel-reguler-349764",
+        },
+
+        ]
       },
 
       "Three" : {
-        "reguler" : "three-reguler-250838",
-        "transfer": "tri-pulsa-transfer-283782",
+        "nama": "Voucher Three",
         "gambar" : "https://i.postimg.cc/VkLmW5Y9/images-2022-10-07-T134356-702.jpg",
+        "data": [
+
+        {
+          "nama": "",
+          "url": "",
+        },
+        {
+          "nama": "",
+          "url": "",
+        },
+
+        ]
       },
 
       "XL Axiata" : {
-        "reguler" : "xl-reguler-250841",
-        "transfer": "xl-pulsa-transfer-283857",
+        "nama": "Voucher XL", 
         "gambar" : "https://i.postimg.cc/rm2HgY16/download-3.jpg",
+        "data": [
+
+        {
+          "nama": "",
+          "url": "",
+        },
+        {
+          "nama": "",
+          "url": "",
+        },
+
+        ]
       },
 
       "Axis" : {
-        "reguler" : "axis-reguler-250833",
-        "transfer": "axis-pulsa-transfer-283765",
+        "nama": "Voucher Axis",  
         "gambar" : "https://i.postimg.cc/qRfqknKc/images-2022-10-07-T132537-156.jpg",
+        "data": [
+
+        {
+          "nama": "",
+          "url": "",
+        },
+        {
+          "nama": "",
+          "url": "",
+        },
+
+        ]
       },
 
       "Smartfren" : {
-        "reguler" : "smartfren-reguler-250835",
-        "transfer": "#",
+        "nama": "Voucher Smartfren",  
         "gambar" : "https://i.postimg.cc/nL9KR4Zq/IMG-20221007-135231.jpg",
-      },
+        "data": [
 
-      "By.U" : {
-        "reguler" : "by-u-250843",
-        "transfer": "#",
-        "gambar" : "https://i.postimg.cc/brHn05dF/download-2.png",
-      },
+        {
+          "nama": "",
+          "url": "",
+        },
+        {
+          "nama": "",
+          "url": "",
+        },
 
+        ]
+      },
     }
+
     ]
 
-
-
+    // Oper-data
+    var dataIsat = urlKategori[0]["Indosat"] 
+    var dataTsel = urlKategori[0]["Telkomsel"] 
+    var dataThree = urlKategori[0]["Three"] 
+    var dataXL = urlKategori[0]["XL Axiata"] 
+    var dataAxis = urlKategori[0]["Axis"] 
+    var dataSfren = urlKategori[0]["Smartfren"] 
 
     //---------- Jangan Dirubah ----------//
 
-    // Kontak
+    // Hide 
+
+    // Kontak & Barcide
     function getContact() {
       window.location.href = urlToko+"/ambil_kontak"
     }
 
-
     // Loading
     var loadAwal = `<div id="loads" class="loading">
+    <div class="loadingspinner">
+    <div id="square1"></div>
+    <div id="square2"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="square5"></div>
+    </div>
     <p id="text-load" class="fw-bold mt-2 text-center t-load">Masukan nomor yang valid terlebih dahulu...</p>
     </div>`
 
@@ -700,7 +901,52 @@
     <p class="fw-bold mt-3">Sepertinya produk ini belum tersedia...</p>
     </div>`
 
+    var kategoriNone  = `<div id="produk-none" class="text-center mt-3 container produk-none animate__animated animate__fadeIn">
+    <img src="https://i.ibb.co/VwtjssF/digital-marketing.webp">
+    <p class="fw-bold mt-3">Kategori belum tersedia...</p>
+    </div>`
+
     //---------- Data API ----------//
+
+
+    // Get Value
+    function getValue(data) {
+      var gambar = data.gambar
+      var nama = data.nama
+
+      var dataKat = data.data
+      var nama1 = dataKat[0].nama
+      var url1 = dataKat[0].url
+
+      loopSubKat(dataKat, gambar, nama)
+      getData(url1, nama1)
+
+    }
+
+
+    // LoopSubKat
+    loopSubKat(dataTsel.data, dataTsel.gambar, dataTsel.nama)
+    function loopSubKat(data, gambar, nama) {
+      $("#imgOperator").attr("src", gambar)
+      $("#namaOperator").html(nama)
+      $("#nameVoucher").html(nama)
+      $("#subKat").html("")
+      var url = data[0].url
+
+      if (url == "" || url == "#") {
+        $("#subKat").html(kategoriNone)
+      }else
+      if (url != "" || url != "#") {
+        $.each(data, function (i, v) { 
+          $("#subKat").append(`<div class="cardSubkat py-2 mb-2" onclick="getData('${v.url}', '${v.nama}')" data-bs-dismiss="offcanvas" aria-label="Close">
+            <p>
+            <img src="${gambar}" width="30" class="rounded-circle">
+            <span class="ms-1">${v.nama}</span>
+            </p>
+            </div>`)
+        })
+      }
+    }
 
     // Loop Produk
     function loopProduk(data) {
@@ -711,11 +957,9 @@
         var strProd = strHarga[1]
         var hargaProd = `Rp ${strProd}`
 
-        $('#dataProduk').append(`<div class="col-6" style="margin-bottom:20px" data-bs-toggle="offcanvas" data-bs-target="#Id3" aria-controls="Id3" onclick="showDetail('${v.nama}','${hargaProd}','${v.url}')">
-          <div class="cerd">
+        $('#dataProduk').append(`<div class="cerd" style="margin-bottom:20px" data-bs-toggle="offcanvas" data-bs-target="#Id3" aria-controls="Id3" onclick="showDetail('${v.nama}','${hargaProd}','${v.url}')">
           <p class="nama-produk">${v.nama}</p>
           <p class="harga-produk">${hargaProd}</p>
-          </div>
           </div>`)
       });
     }
@@ -725,33 +969,31 @@
      $("#btnBli").attr("href", link+"?catatan="+isiCat)
    }
 
+   // search
+   $(document).ready(function(){
+     $("#search").on("input", function() {
+      var value = $(this).val().toLowerCase();
+      $("section .cerd").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
 
-    //---------- Operatoring ----------//
+     $("#src").on("input", function() {
+      var value = $(this).val().toLowerCase();
+      $("section .cardkat").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
 
-    // Var Input & Change
+     $("#src-kiri").on("input", function() {
+      var value = $(this).val().toLowerCase();
+      $("section .cardSubkat").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+   })
 
-    // Clear
-    clrAll()
-    function clrAll(){
-      $("#img-operator").hide()
-      $("#box-operator").hide()
-      $("#box-pilihan").hide()
-      $("#dataAPI").html(loadAwal)
-      $("#img-operator").removeAttr("height")
-
-    } 
-
-    // Load Operator
-    function loadOperator(val) {
-      var imgOpera =  urlKategori[0][val].gambar
-      $("#box-operator").show()
-      $("#box-pilihan").show()
-      $("#imgOperator").attr("height", "35")
-      $("#imgOperator").attr("src", imgOpera)
-      $("#namaOperator").html(val)
-    }
-
-</script> 
-<script src="https://nielz.my.id/scriptelzdesign/pulsa.js"></script>
+ </script> 
+ <script src="https://nielz.my.id/scriptelzdesign/voucher-data.js"></script>
 </body>
 </html>

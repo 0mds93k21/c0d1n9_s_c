@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Indosat</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Kembali</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/produk/pulsa_paket data/myzuu.css">
-</head>
+  <link rel="stylesheet" href="https://sc.myzuu.my.id/assets/css/produk/pulsa/myzuu.css">
 
-<body>
+</head>
+<body onselectstart="return false">
   <!-- Header -->
   <section class="elz-header">
     <div class="elz-bg-header"></div>
@@ -24,33 +26,37 @@
         <!-- Operator -->
         <div class="pils-operator animate__animated animate__fadeIn">
           <p>
-            <img src="https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg" class="imgPulsa rounded-circle">
-            <span class="ms-1 namaPulsa">Indosat</span>
+            <img src="https://i.postimg.cc/fyJC4SPB/signal-1.png" class="imgPulsa rounded-circle">
+            <span class="ms-1 namaPulsa">Pulsa</span>
           </p>
         </div>
         <!-- Input -->
         <div class="d-flex justify-content-beetween">
           <div class="d-block input">
             <label for="first-input" class="label-input">Nomor Handphone</label>
-            <input type="tel" id="nomoTel" maxlength="20" class="form-input p-2 {{hasil_kontak}}"
-              placeholder="Masukan nomor tujuan..." autocomplete="off">
+            <input type="tel" id="nomoTel" maxlength="20" class="form-input p-2 {{hasil_kontak}}" placeholder="Masukan nomor tujuan..." autocomplete="off">
           </div>
           <div class="d-block contact text-end">
             <img src="https://i.postimg.cc/cH45ggkg/contact.png" onclick="getContact()" class="img-contact">
           </div>
         </div>
         <!-- Operator -->
-
+        <div class="pilihan-operator animate__animated animate__fadeIn" id="box-operator">
+          <p>
+            <img width="35" id="imgOperator" class="rounded-circle">
+            <span id="namaOperator" class="ms-1"></span>
+          </p>
+        </div>
       </div>
       <!-- Pilihan -->
       <div id="box-pilihan">
         <div class="d-flex justify-content-beetween mt-3 pilihan-pulsa">
-          <div class="container btn-pulsa bg-pulsa-active text-center" id="reg">
-            <p class="p-1">Pulsa</p>
+          <div class="container btn-pulsa bg-pulsa-active text-center" id="reg"> 
+            <p class="p-1">UMUM</p>
           </div>
           <div class="container btn-pulsa text-center" id="tf">
-            <p class="p-1">Paket Data</p>
-          </div>
+            <p class="p-1">TRANSFER</p>
+          </div> 
         </div>
       </div>
     </div>
@@ -72,8 +78,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-end" style="position: absolute; right: 20px">
-        <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px" data-bs-dismiss="offcanvas"
-          aria-label="Close"></i>
+        <i class="bi bi-caret-down-fill" style="font-size: 25px; margin-top: -5px" data-bs-dismiss="offcanvas" aria-label="Close"></i>
       </div>
     </div>
     <div class="offcanvas-body">
@@ -104,8 +109,7 @@
 
       <div class="d-flex justify-content-between mt-5" id="btls">
 
-        <button class="btn-batal px-3 py-2 w-100 me-3" data-bs-dismiss="offcanvas" aria-label="Close"
-          id="btnBtl">Batalkan</button>
+        <button class="btn-batal px-3 py-2 w-100 me-3" data-bs-dismiss="offcanvas" aria-label="Close" id="btnBtl" >Batalkan</button>
 
         <a id="btnBli" class="btn-beli px-3 py-2 w-100 text-center">Beli Sekarang</a>
 
@@ -114,9 +118,7 @@
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript">
 
@@ -130,21 +132,61 @@
 
     // LINK KATEGORI
     const urlKategori = [
+    {
+      "Indosat" :
       {
-        "Indosat":
-        {
-          "reguler": "pulsa-indosat-411810",
-          "transfer": "indosat-pulsa-transf-411812",
-          "gambar": "https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg",
-        }
-      }
+        "reguler" : "pulsa-indosat-411810",
+        "transfer": "indosat-pulsa-transf-411812",
+        "gambar" : "https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg",
+      },
+
+      "Telkomsel" : {
+        "reguler" : "telkomsel-reguler-349764",
+        "transfer": "telkomsel-transfer-350436",
+        "gambar" : "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
+      },
+
+      "Three" : {
+        "reguler" : "three-reguler-250838",
+        "transfer": "tri-pulsa-transfer-283782",
+        "gambar" : "https://i.postimg.cc/VkLmW5Y9/images-2022-10-07-T134356-702.jpg",
+      },
+
+      "XL Axiata" : {
+        "reguler" : "xl-reguler-250841",
+        "transfer": "xl-pulsa-transfer-283857",
+        "gambar" : "https://i.postimg.cc/rm2HgY16/download-3.jpg",
+      },
+
+      "Axis" : {
+        "reguler" : "axis-reguler-250833",
+        "transfer": "axis-pulsa-transfer-283765",
+        "gambar" : "https://i.postimg.cc/qRfqknKc/images-2022-10-07-T132537-156.jpg",
+      },
+
+      "Smartfren" : {
+        "reguler" : "smartfren-reguler-250835",
+        "transfer": "#",
+        "gambar" : "https://i.postimg.cc/nL9KR4Zq/IMG-20221007-135231.jpg",
+      },
+
+      "By.U" : {
+        "reguler" : "by-u-250843",
+        "transfer": "#",
+        "gambar" : "https://i.postimg.cc/brHn05dF/download-2.png",
+      },
+
+    }
     ]
+
+
+
 
     //---------- Jangan Dirubah ----------//
 
     // Kontak
     function getContact() {
-      window.location.href = urlToko + "/ambil_kontak"
+      window.location.href = urlToko+"/ambil_kontak"
     }
 
 
@@ -166,9 +208,9 @@
     var noSalah = `<div id="no-salah" class="container text-center produk-none animate__animated animate__fadeIn">
     <img src="https://i.ibb.co/f8gVVGD/eror.jpg">
     <p class="fw-bold mt-3">Nomor yang dimasukan salah nih...</p>
-    </div>`
+    </div>` 
 
-    var produkNone = `<div id="produk-none" class="text-center container produk-none animate__animated animate__fadeIn">
+    var produkNone  = `<div id="produk-none" class="text-center container produk-none animate__animated animate__fadeIn">
     <img src="https://i.ibb.co/VwtjssF/digital-marketing.webp">
     <p class="fw-bold mt-3">Sepertinya produk ini belum tersedia...</p>
     </div>`
@@ -179,7 +221,7 @@
     function loopProduk(data) {
       $("#dataProduk").html("")
 
-      $.each(data, function (i, v) {
+      $.each(data, function(i, v){
         var strHarga = v.harga.split("Rp")
         var strProd = strHarga[1]
         var hargaProd = `Rp ${strProd}`
@@ -195,8 +237,8 @@
 
     // Beli
     function tombolBeli(link, isiCat) {
-      $("#btnBli").attr("href", link + "?catatan=" + isiCat)
-    }
+     $("#btnBli").attr("href", link+"?catatan="+isiCat)
+   }
 
 
     //---------- Operatoring ----------//
@@ -205,18 +247,18 @@
 
     // Clear
     clrAll()
-    function clrAll() {
+    function clrAll(){
       $("#img-operator").hide()
       $("#box-operator").hide()
       $("#box-pilihan").hide()
       $("#dataAPI").html(loadAwal)
       $("#img-operator").removeAttr("height")
 
-    }
+    } 
 
     // Load Operator
     function loadOperator(val) {
-      var imgOpera = urlKategori[0][val].gambar
+      var imgOpera =  urlKategori[0][val].gambar
       $("#box-operator").show()
       $("#box-pilihan").show()
       $("#imgOperator").attr("height", "35")
@@ -224,8 +266,7 @@
       $("#namaOperator").html(val)
     }
 
-  </script>
-  <script src="https://nielz.my.id/scriptelzdesign/pulsa.js"></script>
+</script> 
+<script src="https://nielz.my.id/scriptelzdesign/pulsa.js"></script>
 </body>
-
 </html>

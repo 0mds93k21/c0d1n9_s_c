@@ -250,10 +250,8 @@
     }
 }
 
-/*---------- End Loader ----------*/
 
-
-/*---------- CSS PULSA ----------*/
+/*---------- CSS ----------*/
 * {
     font-family: 'Muli'
 }
@@ -286,7 +284,7 @@ a:hover {
 }
 
 .elz-bg-header {
-    background-color: #42a5f5;
+    background-color: #9442fe;
     height: 110px;
     border-radius: 0px 0 50px 50px;
 }
@@ -310,11 +308,11 @@ a:hover {
 }
 
 .input {
-    width: 130%
+    width: 100%
 }
 
 .form-input {
-    border: 1px solid #42a5f5;
+    border: 1px solid #9442fe;
     border-radius: 5px;
     font-size: 15px;
     width: 100%;
@@ -327,7 +325,7 @@ a:hover {
     width: 40px;
     padding: 8px;
     border-radius: 5px;
-    background-color: #42a5f5;
+    background-color: #9442fe;
 
 }
 
@@ -357,7 +355,7 @@ label {
 }
 
 .bg-pulsa-active {
-    background-color: #42a5f5;
+    background-color: #9442fe;
     pointer-events: none;
     border-radius: 5px;
     color: #fff;
@@ -425,12 +423,14 @@ label {
 }
 
 .bg-canvas {
-    background-color: #42a5f5;
+    background-color: #9442fe;
     color: white;
+    border-radius: 10px 10px 0 0;
 }
 
 .offcanvas-bottom {
     height: auto !important;
+    border-radius: 10px 10px 0 0;
 }
 
 .rc {
@@ -455,9 +455,9 @@ label {
 }
 
 .btn-beli {
-    background-color: #9442fe;
-    border: #9442fe;
-    color: #f7f3ff;
+    background-color: #42a5f5;
+    border: #42a5f5;
+    color: white;
     border-radius: 5px;
     font-size: 15px;
     text-transform: uppercase;
@@ -466,9 +466,9 @@ label {
 }
 
 .btn-batal {
-    background-color: #f7f3ff;
-    border: #f7f3ff;
-    color: #9442fe;
+    background-color: #808080;
+    border: #808080;
+    color: white;
     border-radius: 5px;
     font-size: 15px;
     text-transform: uppercase;
@@ -479,8 +479,9 @@ label {
 }
 
 .imgPulsa {
-    width: 45px;
+    width: 35px;
     padding: 5px;
+    background-color: #42a5f5;
 }
 
 .namaPulsa {
