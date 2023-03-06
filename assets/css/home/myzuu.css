@@ -5,7 +5,7 @@ body {
 .header-myzuu {
     display: flex;
     padding: 10px;
-    background: #2196f3;
+    background: #9442fe;
 }
 
 .name-user {
@@ -52,7 +52,7 @@ body {
 
 /* bg-box-saldo */
 .bg-myzuu {
-    background: #2196f3;
+    background: #9442fe;
     padding: 0px;
     border-radius: 0px 0px 0% 20%;
     height: 190px;
@@ -106,7 +106,7 @@ body {
     width: 40px;
     padding: 8px;
     border-radius: 12px;
-    background-color: #2196f3;
+    background-color: #9442fe;
     margin-left: 5px;
     box-shadow: rgba(30, 133, 236, 0.2) 0px 8px 24px;
 }
@@ -170,7 +170,7 @@ body {
 }
 
 .tab button.active {
-    background: #2196f3;
+    background: #9442fe;
     color: #fff;
     border-radius: 100px;
     animation: fade-in-left .5s ease;
@@ -202,8 +202,8 @@ body {
 
 .menu-list img {
     width: 42px;
-    background: rgb(69, 165, 245);
-    background: linear-gradient(180deg, rgba(69, 165, 245, 1) 0%, rgba(5, 126, 246, 1) 100%);
+    background: rgba(148,66,254,255);
+    background: linear-gradient(180deg, rgba(148,66,254,255) 0%, rgba(148,66,254,255) 100%);
     padding: 9px;
     border-radius: 14px;
     animation: roll-in 1s ease;
@@ -266,7 +266,7 @@ body {
     opacity: 0.8;
     width: 25px;
     border-radius: 8px;
-    background-color: #2196f3;
+    background-color: #9442fe;
 }
 
 /* KEYFRAME */
