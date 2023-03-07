@@ -200,7 +200,7 @@ body {
 
 }
 
-.menu-list img {
+.menu-list .img-myzuu {
     width: 42px;
     background: rgba(148,66,254,255);
     background: linear-gradient(180deg, rgba(148,66,254,255) 0%, rgba(148,66,254,255) 100%);
@@ -208,6 +208,13 @@ body {
     border-radius: 14px;
     animation: roll-in 1s ease;
     box-shadow: rgba(30, 133, 236, 0.2) 0px 8px 24px;
+}
+
+.menu-list .thumbnail-img {
+    width: 42px;
+    padding: 0px;
+    border-radius: 14px;
+    animation: roll-in 1s ease;
 }
 
 .menu-list p {
