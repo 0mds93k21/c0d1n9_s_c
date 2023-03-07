@@ -27,7 +27,7 @@ const urlKategori = [
   {
     "nama": "Love Nikki",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/love-nikki/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.jpg",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamond",
