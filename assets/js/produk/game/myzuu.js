@@ -25,6 +25,23 @@ const urlKategori = [
   },
 
   {
+    "nama": "PUBG",
+    "cekID": "#",
+    "gambar": "https://i.ibb.co/qCnVj9G/pubgm.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "UC Pubgm",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
     "nama": "Love Nikki",
     "cekID": "",
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.jpg",
@@ -55,23 +72,6 @@ const urlKategori = [
     "categoryKe2": {
       "nama": "#",
       "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "PUBG",
-    "cekID": "#",
-    "gambar": "https://i.ibb.co/qCnVj9G/pubgm.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "UC Pubgm",
-      "url": "pubg-mobile-412042",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "Membership",
-      "url": "telkomsel-reguler-349764",
       "data": "list"
     }
   },
