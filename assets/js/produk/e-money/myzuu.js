@@ -11,19 +11,19 @@
     const urlKategori = [
       {
         "nama": "Dana",
-        "url": "telkomsel-transfer-350436",
+        "url": "",
         "cekID": "dana",
         "gambar": "https://i.ibb.co/DVWgYLq/dana1.png"
       },
       {
         "nama": "Gopay",
-        "url": "telkomsel-transfer-350436",
+        "url": "",
         "cekID": "gopay",
         "gambar": "https://i.ibb.co/WVDSysH/gopay1.png"
       },
       {
         "nama": "OVO",
-        "url": "telkomsel-transfer-350436",
+        "url": "",
         "cekID": "ovo",
         "gambar": "https://i.ibb.co/Ybz5Tkz/ovo1.png"
       },
