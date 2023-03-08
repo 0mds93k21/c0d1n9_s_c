@@ -27,7 +27,7 @@ const urlKategori = [
   {
     "nama": "Garena Shell",
     "cekID": "#",
-    "gambar": "/assets/img/produk/game/garena-shell/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/garena-shell/myzuu.jpg",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Shell",
@@ -75,7 +75,7 @@ const urlKategori = [
       "data": "list"
     }
   },
-  
+
   {
     "nama": "Free Fire",
     "cekID": "freefire",
