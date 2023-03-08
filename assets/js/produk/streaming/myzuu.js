@@ -13,13 +13,13 @@
         "nama": "WeTV",
         "url": "",
         "keterangan": "ID Tujuan",
-        "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/wetv/myzuu.jpg"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/wetv/myzuu.png"
       },
       {
         "nama": "VIU",
         "url": "",
         "keterangan": "ID Tujuan",
-        "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/viu/myzuu.jpg"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/viu/myzuu.png"
       },
       {
         "nama": "Spotify",
@@ -31,7 +31,7 @@
         "nama": "JOOX",
         "url": "",
         "keterangan": "ID Tujuan",
-        "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/joox/myzuu.jpg"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/joox/myzuu.png"
       },
     ]
 
