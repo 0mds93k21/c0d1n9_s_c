@@ -11,25 +11,25 @@
     const urlKategori = [
       {
         "nama": "WeTV",
-        "url": "",
+        "url": "wetv-413518",
         "keterangan": "ID Tujuan",
         "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/wetv/myzuu.png"
       },
       {
         "nama": "VIU",
-        "url": "",
+        "url": "viu-413517",
         "keterangan": "ID Tujuan",
         "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/viu/myzuu.png"
       },
       {
         "nama": "Spotify",
-        "url": "",
+        "url": "spotify-413520",
         "keterangan": "ID Tujuan",
         "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/spotify/myzuu.png"
       },
       {
         "nama": "JOOX",
-        "url": "",
+        "url": "joox-413519",
         "keterangan": "ID Tujuan",
         "gambar": "https://sc.myzuu.my.id/assets/img/produk/streaming/joox/myzuu.png"
       },
