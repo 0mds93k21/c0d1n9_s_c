@@ -1,10 +1,10 @@
 //---------- Pengaturan ----------//
 
 // LINK TOKO
-const urlToko = "https://avihzserver.bukaolshop.site"
+const urlToko = "https://myzuu.bukaolshop.site"
 
 // AKTIVASI
-const aktivasi = "efc4a75b9df6341bcf57c4f998d87b3000bdff3e1ae2fde12de452ff50c1c5b6"
+const aktivasi = "myzuu"
 
 
 // LINK Kategori
@@ -13,56 +13,56 @@ const urlKategori = [
         "nama": "Gopay",
         "url": "",
         "cekID": "gopay",
-        "gambar": "https://i.ibb.co/WVDSysH/gopay1.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/gopay/myzuu.png"
     },
     {
         "nama": "OVO",
         "url": "",
         "cekID": "ovo",
-        "gambar": "https://i.ibb.co/Ybz5Tkz/ovo1.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/ovo/myzuu.png"
     },
     {
         "nama": "Grab",
         "url": "",
         "cekID": "grab",
-        "gambar": "https://i.ibb.co/vDcKhW2/grab.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/grab/myzuu.png"
     },
     {
         "nama": "Dana",
         "url": "",
         "cekID": "dana",
-        "gambar": "https://i.ibb.co/DVWgYLq/dana1.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/dana/myzuu.png"
     },
     {
         "nama": "TIX ID",
         "url": "",
         "cekID": "",
-        "gambar": "/assets/img/produk/e-money/tix-id/myzuu.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/tix-id/myzuu.png"
     },
     {
         "nama": "Link Aja",
         "url": "",
         "cekID": "linkaja",
-        "gambar": "https://i.ibb.co/r7HKrJW/linkaja.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/linkaja/myzuu.png"
     },
 
     {
         "nama": "Shopee Pay",
         "url": "",
         "cekID": "shopeepay",
-        "gambar": "https://i.ibb.co/f0kZN19/shope1.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/shopee/myzuu.png"
     },
     {
         "nama": "I Saku",
         "url": "",
         "cekID": "isaku",
-        "gambar": "https://i.ibb.co/BVWjpFG/isaku.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/isaku/myzuu.png"
     },
     {
         "nama": "Sakuku",
         "url": "",
         "cekID": "",
-        "gambar": "https://i.ibb.co/r7HKrJW/linkaja.png"
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/sakuku/myzuu.png"
     },
 ]
 
