@@ -59,6 +59,12 @@ const urlKategori = [
         "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/isaku/myzuu.png"
     },
     {
+        "nama": "Doku",
+        "url": "",
+        "cekID": "",
+        "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/doku/myzuu.png"
+    },
+    {
         "nama": "Sakuku",
         "url": "",
         "cekID": "",
