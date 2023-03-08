@@ -8,6 +8,41 @@ const aktivasi = "myzuu"
 // LINK Kategori
 const urlKategori = [
   {
+    "nama": "Love Nikki",
+    "cekID": "",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamond",
+      "url": "love-nikki-413121",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Garena Shell",
+    "cekID": "#",
+    "gambar": "/assets/img/produk/game/garena-shell/myzuu.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Shell",
+      "url": "garena-shell-413515",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  /**  Kategori Game /
+   {
     "nama": "Mobile Legends",
     "cekID": "mobilelegends",
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mobile-legend/myzuu.jpg",
@@ -40,25 +75,7 @@ const urlKategori = [
       "data": "list"
     }
   },
-
-  {
-    "nama": "Love Nikki",
-    "cekID": "",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "love-nikki-413121",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "",
-      "url": "",
-      "data": "list"
-    }
-  },
-
-  /**  Kategori Game /
+  
   {
     "nama": "Free Fire",
     "cekID": "freefire",
@@ -101,23 +118,6 @@ const urlKategori = [
     "categoryKe1": {
       "nama": "CP",
       "url": "codm-412060",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Garena Shell",
-    "cekID": "#",
-    "gambar": "https://i.ibb.co/4JzkVr8/garena.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "telkomsel-transfer-350436",
       "data": "grid"
     },
     "categoryKe2": {
