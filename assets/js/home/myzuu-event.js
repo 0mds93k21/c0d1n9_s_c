@@ -1,5 +1,6 @@
 $(function () {
     var bar = '';
+    bar += '<link rel="stylesheet" href="https://sc.myzuu.my.id/assets/css/home/myzuu.css">';
 
     bar += '<a href="#home">';
         bar += '<button class="button-myzuu-produk2">';
