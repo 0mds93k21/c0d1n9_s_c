@@ -4,7 +4,7 @@ $(function () {
     bar += '<div class="card-blog">';
 
         bar += '<div class="card-body-blog">';
-            bar += '<img src="/assets/img/slide/blog/1.png" alt="Myzuu" class="img-card-myzuu" />';
+            bar += '<img src="https://sc.myzuu.my.id/assets/img/slide/blog/1.png" alt="Myzuu" class="img-card-myzuu" />';
             bar += '<div class="text-card-blog">';
                 bar += '<h2 class="title-blog">Pusat Bantuan</h2>';
                 bar += '<p class="paragraph-blog">';
@@ -15,7 +15,7 @@ $(function () {
         bar += '</div>';
 
         bar += '<div class="card-body-blog">';
-            bar += '<img src="/assets/img/slide/blog/2.png" alt="Myzuu" class="img-card-myzuu" />';
+            bar += '<img src="https://sc.myzuu.my.id/assets/img/slide/blog/2.png" alt="Myzuu" class="img-card-myzuu" />';
             bar += '<div class="text-card-blog">';
                 bar += '<h2 class="title-blog">Promo Voucher Favorit</h2>';
                 bar += '<p class="paragraph-blog">';
