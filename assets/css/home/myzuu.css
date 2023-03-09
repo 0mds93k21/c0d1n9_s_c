@@ -29,6 +29,7 @@ body {
 .skeleton {
     position: relative;
 }
+
 .skeleton::before {
     content: '';
     position: absolute;
@@ -40,11 +41,14 @@ body {
     background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
     background-size: 200%;
     animation: skeleton 1s infinite reverse;
+    border-radius: 5%;
 }
+
 @keyframes skeleton {
     0% {
         background-position: -100% 0;
     }
+
     100% {
         background-position: 100% 0;
     }
@@ -202,8 +206,8 @@ body {
 
 .menu-list .img-myzuu {
     width: 42px;
-    background: rgba(148,66,254,255);
-    background: linear-gradient(180deg, rgba(148,66,254,255) 0%, rgba(148,66,254,255) 100%);
+    background: rgba(148, 66, 254, 255);
+    background: linear-gradient(180deg, rgba(148, 66, 254, 255) 0%, rgba(148, 66, 254, 255) 100%);
     padding: 9px;
     border-radius: 14px;
     animation: roll-in 1s ease;
@@ -374,4 +378,149 @@ body {
     font-size: 14px;
     color: grey;
     margin-bottom: 0px;
+}
+
+.button-myzuu-produk2 {
+    background: white;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 290px;
+    padding: 0px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-myzuu-produk2 img {
+    width: 100%;
+    padding: 0px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.button-myzuu-produk2 p {
+    font-size: 3vw;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    text-align: left;
+}
+
+.button-myzuu-produk2 h4 {
+    font-size: 3vw;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-top: 0px;
+    text-align: left;
+}
+
+#second {
+
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 1s infinite linear;
+    -o-animation: bounce 1s infinite linear;
+    -webkit-animation: bounce 1s infinite linear;
+    animation: bounce 1s infinite linear;
+}
+
+div.scrollmenu {
+    background-color: transparent;
+    overflow: auto;
+    clear: both;
+    white-space: nowrap;
+}
+
+div.scrollmenu button {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #fff;
+}
+
+
+
+.title__el__menarik {
+    color: #1C1362;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.paragraph__el__update {
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    margin-top: 12px;
+    margin-left: 14px;
+}
+
+.card-blog {
+    padding-top: 10px;
+    margin-top: 15px;
+    display: grid;
+    margin: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card-body-blog {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.11);
+    height: 228px;
+    position: relative;
+}
+
+.img-card-myzuu {
+    object-fit: cover;
+    width: 100%;
+    height: 85px;
+    border-radius: 10px 10px 0 0;
+}
+
+.text-card-blog {
+    padding: 5px 10px 20px;
+}
+
+.title-blog {
+    margin: 0;
+    padding-top: 10px;
+    color: rgb(73, 73, 73);
+    font-size: 12px;
+}
+
+.paragraph-blog {
+    margin: 8px 0;
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    line-height: 13px;
+}
+
+.link-blog {
+    color: rgb(48, 178, 230);
+    text-decoration: none;
+    font-size: 12.4px;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container__cards__menarik {
+    font-family: "Roboto", sans-serif;
+    padding-top: 10px;
 }

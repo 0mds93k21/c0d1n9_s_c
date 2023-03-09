@@ -1,0 +1,47 @@
+$(function () {
+    var bar = '';
+
+    bar += '<div class="card-blog">';
+
+        bar += '<div class="card-body-blog">';
+            bar += '<img src="/assets/img/slide/blog/1.png" alt="Myzuu" class="img-card-myzuu" />';
+            bar += '<div class="text-card-blog">';
+                bar += '<h2 class="title-blog">Pusat Bantuan</h2>';
+                bar += '<p class="paragraph-blog">';
+                    bar += 'Punya kendala atau pertanyaan terkait Myzuu? Hubungi kami di sini';
+                bar += '</p>';
+                bar += '<a href="https://myzuu.bukaolshop.site/akun/page?chat" class="link-blog">hubungi</a>';
+            bar += '</div>';
+        bar += '</div>';
+
+        bar += '<div class="card-body-blog">';
+            bar += '<img src="/assets/img/slide/blog/2.png" alt="Myzuu" class="img-card-myzuu" />';
+            bar += '<div class="text-card-blog">';
+                bar += '<h2 class="title-blog">Promo Voucher Favorit</h2>';
+                bar += '<p class="paragraph-blog">';
+                    bar += 'Yuk Cek Berbagai Promo Menarik Di Aplikasi Myzuu Sekarang!';
+                bar += '</p>';
+                bar += '<a href="https://myzuu.bukaolshop.site/akun/page?chat" class="link-blog">Cek Disini!</a>';
+            bar += '</div>';
+        bar += '</div>';
+        
+    bar += '</div>';
+
+    $("#blog").html(bar);
+});
+
+function getValueByName(name) {
+    var url = document.getElementById('Myzuu').getAttribute('src');
+    var param = new Array();
+    if (url.indexOf("?") != -1) {
+        var source = url.split("?")[1];
+        items = source.split("&");
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            var parameters = item.split("=");
+            if (parameters[0] == "id") {
+                return parameters[1];
+            }
+        }
+    }
+}

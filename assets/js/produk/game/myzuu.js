@@ -8,6 +8,22 @@ const aktivasi = "myzuu"
 // LINK Kategori
 const urlKategori = [
   {
+    "nama": "Mobile Legends",
+    "cekID": "mobilelegends",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mobile-legend/myzuu.jpg",
+    "kode": "2InputGame",
+    "categoryKe1": {
+      "nama": "Diamond",
+      "url": "umum-412544",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "membership-412546",
+      "data": "list"
+    }
+  },
+  {
     "nama": "Love Nikki",
     "cekID": "",
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.jpg",
@@ -42,22 +58,6 @@ const urlKategori = [
   },
 
   /**  Kategori Game /
-   {
-    "nama": "Mobile Legends",
-    "cekID": "mobilelegends",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mobile-legend/myzuu.jpg",
-    "kode": "2InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "umum-412544",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "Membership",
-      "url": "membership-412546",
-      "data": "list"
-    }
-  },
 
   {
     "nama": "PUBG",
