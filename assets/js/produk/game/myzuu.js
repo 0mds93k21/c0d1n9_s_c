@@ -7,6 +7,24 @@ const aktivasi = "myzuu"
 
 // LINK Kategori
 const urlKategori = [
+
+  {
+    "nama": "Garena Shell",
+    "cekID": "#",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/garena-shell/myzuu.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Shell",
+      "url": "garena-shell-413515",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
   {
     "nama": "Mobile Legends",
     "cekID": "mobilelegends",
@@ -23,6 +41,75 @@ const urlKategori = [
       "data": "list"
     }
   },
+
+  {
+    "nama": "Point Blank",
+    "cekID": "pointblank",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/point-blank/myzuu.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "PB Cash",
+      "url": "point-blank-414296",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Ragnarok Mobile",
+    "cekID": "ragnarokm",
+    "gambar": "/assets/img/produk/game/ragnarok/myzuu.png",
+    "kode": "ragnarokGame",
+    "categoryKe1": {
+      "nama": "Big Cat Coins",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Free Fire",
+    "cekID": "freefire",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/free-fire/myzuu.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamond",
+      "url": "umum-414306",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "membership-414307",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Arena Of Valor",
+    "cekID": "aov",
+    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamond",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+  
   {
     "nama": "Love Nikki",
     "cekID": "",
@@ -36,23 +123,6 @@ const urlKategori = [
     "categoryKe2": {
       "nama": "",
       "url": "",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Garena Shell",
-    "cekID": "#",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/garena-shell/myzuu.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Shell",
-      "url": "garena-shell-413515",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
       "data": "list"
     }
   },
@@ -77,40 +147,6 @@ const urlKategori = [
   },
 
   {
-    "nama": "Free Fire",
-    "cekID": "freefire",
-    "gambar": "https://i.ibb.co/2YZNmnm/free-fire-new-logo.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "free-fire-411855",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Arena Of Valor",
-    "cekID": "aov",
-    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "telkomsel-transfer-350436",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
     "nama": "COD Mobile",
     "cekID": "callofduty",
     "gambar": "https://i.ibb.co/YTWK4cC/codm.jpg",
@@ -126,25 +162,6 @@ const urlKategori = [
       "data": "list"
     }
   },
-
-
-  {
-    "nama": "Point Blank",
-    "cekID": "pointblank",
-    "gambar": "https://i.ibb.co/Pjgt9nk/Point-Blank-ID-tile.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "PB Cash",
-      "url": "point-blank-412034",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
 
   {
     "nama": "Hago",
@@ -220,23 +237,6 @@ const urlKategori = [
     "cekID": "valorant",
     "gambar": "https://i.ibb.co/rvpVvLd/valorant-promo.jpg",
     "kode": "pagarGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "telkomsel-transfer-350436",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Ragnarok Mobile",
-    "cekID": "ragnarokm",
-    "gambar": "https://i.ibb.co/WnpvQJ5/ragnarok-logo.webp",
-    "kode": "ragnarokGame",
     "categoryKe1": {
       "nama": "Diamond",
       "url": "telkomsel-transfer-350436",

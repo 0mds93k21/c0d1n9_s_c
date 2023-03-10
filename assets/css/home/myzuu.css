@@ -394,6 +394,24 @@ a {
     text-decoration: none;
 }
 
+.lainnya-event {
+    font-size:14px;
+    color:black;
+    float:right;
+    margin-top:-20px;
+    margin-right:10px;
+}
+
+.info-title {
+    font-size:14px;
+    font-weight:bold;
+}
+.info-subtitle {
+    margin:0px;
+    font-weight:400;
+    font-size:12px;
+}
+
 .button-myzuu-produk2 img {
     width: 100%;
     padding: 0px;
@@ -478,7 +496,6 @@ div.scrollmenu a:hover {
 }
 
 .img-card-myzuu {
-    object-fit: cover;
     width: 100%;
     height: 85px;
     border-radius: 10px 10px 0 0;
@@ -523,4 +540,5 @@ div.scrollmenu a:hover {
 .container__cards__menarik {
     font-family: "Roboto", sans-serif;
     padding-top: 10px;
+    padding-bottom: 100px;
 }

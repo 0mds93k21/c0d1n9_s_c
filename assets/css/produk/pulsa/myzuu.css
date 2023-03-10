@@ -462,7 +462,6 @@ label {
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
-    color: white
   }
   
   .btn-batal {
@@ -495,5 +494,4 @@ label {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #cc0000;
   }
