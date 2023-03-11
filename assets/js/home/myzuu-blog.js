@@ -21,7 +21,7 @@ $(function () {
                 bar += '<p class="paragraph-blog">';
                     bar += 'Yuk Cek Berbagai Promo Menarik Di Aplikasi Myzuu Sekarang!';
                 bar += '</p>';
-                bar += '<a href="https://myzuu.bukaolshop.site/akun/page?chat" class="link-blog">Cek Disini!</a>';
+                bar += '<a href="https://myzuu.bukaolshop.site/pages?voucher" class="link-blog">Cek Disini!</a>';
             bar += '</div>';
         bar += '</div>';
 
