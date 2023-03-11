@@ -10,7 +10,7 @@ $(function () {
                 bar += '<p class="paragraph-blog">';
                     bar += 'Punya kendala atau pertanyaan terkait Myzuu? Hubungi kami di sini';
                 bar += '</p>';
-                bar += '<a href="https://myzuu.bukaolshop.site/akun/page?chat" class="link-blog">hubungi</a>';
+                bar += '<a href="https://myzuu.crisp.help/id/" class="link-blog">hubungi</a>';
             bar += '</div>';
         bar += '</div>';
 
