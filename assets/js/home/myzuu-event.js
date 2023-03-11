@@ -3,15 +3,7 @@ $(function () {
 
     bar += '<a href="#home">';
         bar += '<button class="button-myzuu-produk2">';
-            bar += '<img src="https://sc.myzuu.my.id/assets/img/slide/event/1.png" alt="Myzuu">';
-            bar += '<p>Weeken Deal Promo Paket data Telkomsel</p>';
-            bar += '<h4>Klik, Punya Kode Voucher? Gunakan skrng</h4>';
-        bar += '</button>';
-    bar += '</a>';
-
-    bar += '<a href="#home">';
-        bar += '<button class="button-myzuu-produk2">';
-            bar += '<img src="https://sc.myzuu.my.id/assets/img/slide/event/1.png" alt="Myzuu">';
+            bar += '<img src="/assets/img/info/event/1.png" alt="Myzuu">';
             bar += '<p>Weeken Deal Promo Paket data Telkomsel</p>';
             bar += '<h4>Klik, Punya Kode Voucher? Gunakan skrng</h4>';
         bar += '</button>';
