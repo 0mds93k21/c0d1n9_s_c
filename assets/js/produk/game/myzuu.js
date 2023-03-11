@@ -62,7 +62,7 @@ const urlKategori = [
   {
     "nama": "Ragnarok Mobile",
     "cekID": "ragnarokm",
-    "gambar": "/assets/img/produk/game/ragnarok/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/ragnarok/myzuu.png",
     "kode": "ragnarokGame",
     "categoryKe1": {
       "nama": "Big Cat Coins",
