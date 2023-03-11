@@ -32,7 +32,7 @@ $(function () {
                 bar += '<p class="paragraph-blog">';
                     bar += 'Yuk Cek Cara TopUp Untuk MyzuuPay Disini!';
                 bar += '</p>';
-                bar += '<a href="https://myzuu.bukaolshop.site/akun/page?chat" class="link-blog">Cek Disini!</a>';
+                bar += '<a href="https://bio.andrep.my.id/" class="link-blog">Cek Disini!</a>';
             bar += '</div>';
         bar += '</div>';
         
