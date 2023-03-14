@@ -32,14 +32,14 @@ $(function () {
         bar += '</div>';
 
         bar += '<div class="card-body-blog">';
-            bar += '<a href="https://myzuu.crisp.help/id/article/bagaimana-cara-melakukan-top-up-di-myzuupay-1c85nlg/?bust=1678799032843">';
+            bar += '<a href="https://bio.andrep.my.id/">';
                 bar += '<img src="https://sc.myzuu.my.id/assets/img/info/blog/3.png" alt="Myzuu" class="img-card-myzuu" />';
                 bar += '<div class="text-card-blog">';
                     bar += '<h2 class="title-blog">Cara TopUp MyzuuPay</h2>';
                     bar += '<p class="paragraph-blog">';
                         bar += 'Yuk Cek Cara TopUp Untuk MyzuuPay Disini!';
                     bar += '</p>';
-                    bar += '<a href="https://myzuu.crisp.help/id/article/bagaimana-cara-melakukan-top-up-di-myzuupay-1c85nlg/?bust=1678799032843" class="link-blog">Cek Disini!</a>';
+                    bar += '<a href="https://bio.andrep.my.id/" class="link-blog">Cek Disini!</a>';
                 bar += '</div>';
             bar += '</a>';
         bar += '</div>';

@@ -4,7 +4,7 @@
     const urlToko = "https://myzuu.webtoko.net"
 
     // AKTIVASI
-    const aktivasi = "Myzuu"
+    const aktivasi = "myzuu"
 
     // NAMA KATEGORI PLN
     const namaKategori = "Token Listrik"
