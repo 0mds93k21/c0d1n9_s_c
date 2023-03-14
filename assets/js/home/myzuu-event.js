@@ -11,7 +11,7 @@ $(function () {
 
     bar += '<a href="#home">';
         bar += '<button class="button-myzuu-produk2">';
-            bar += '<img src="https://sc.myzuu.my.id/assets/img/info/event/3.png" alt="Myzuu">';
+            bar += '<img src="https://sc.myzuu.my.id/assets/img/info/event/2.png" alt="Myzuu">';
             bar += '<p>Event Jujutsu Kaisen</p>';
             bar += '<h4>Klik, Punya Kode Voucher? Gunakan skrng</h4>';
         bar += '</button>';
