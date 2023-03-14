@@ -487,6 +487,10 @@ div.scrollmenu a:hover {
     gap: 15px;
 }
 
+.card-blog a {
+    text-decoration: none;
+}
+
 .card-body-blog {
     border-radius: 10px;
     background-color: #fff;

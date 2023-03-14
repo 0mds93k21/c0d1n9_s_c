@@ -1,5 +1,5 @@
 // LINK TOKO
-const urlToko = "https://myzuu.bukaolshop.site"
+const urlToko = "https://myzuu.webtoko.net"
 
 // AKTIVASI
 const aktivasi = "myzuu"
