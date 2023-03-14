@@ -19,14 +19,14 @@ $(function () {
         
 
         bar += '<div class="card-body-blog">';
-            bar += '<a href="https://myzuu.bukaolshop.site/pages?voucher">';
+            bar += '<a href="https://myzuu.webtoko.net/pages?voucher">';
                 bar += '<img src="https://sc.myzuu.my.id/assets/img/info/blog/2.png" alt="Myzuu" class="img-card-myzuu" />';
                 bar += '<div class="text-card-blog">';
                     bar += '<h2 class="title-blog">Promo Voucher Favorit</h2>';
                     bar += '<p class="paragraph-blog">';
                         bar += 'Yuk Cek Berbagai Promo Menarik Di Aplikasi Myzuu Sekarang!';
                     bar += '</p>';
-                    bar += '<a href="https://myzuu.bukaolshop.site/pages?voucher" class="link-blog">Cek Disini!</a>';
+                    bar += '<a href="https://myzuu.webtoko.net/pages?voucher" class="link-blog">Cek Disini!</a>';
                 bar += '</div>';
             bar += '</a>';
         bar += '</div>';
