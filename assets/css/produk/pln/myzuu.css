@@ -457,6 +457,10 @@ label {
   font-size: 14px;
 }
 
+.id-pel {
+  text-align: right;
+}
+
 .dashed {
   border-top: 2px dashed #8c8b8b;
 }
