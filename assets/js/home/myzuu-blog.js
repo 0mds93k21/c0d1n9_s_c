@@ -5,14 +5,14 @@ $(function () {
 
    
         bar += '<div class="card-body-blog">';
-            bar += '<a href="https://help-apk.myzuu.my.id/">';
+            bar += '<a href="https://myzuu.webtoko.net/digital/194780">';
                 bar += '<img src="https://sc.myzuu.my.id/assets/img/info/blog/1.png" alt="Myzuu" class="img-card-myzuu" />';
                 bar += '<div class="text-card-blog">';
                     bar += '<h2 class="title-blog">Pusat Bantuan</h2>';
                     bar += '<p class="paragraph-blog">';
                         bar += 'Punya kendala atau pertanyaan terkait Myzuu? Hubungi kami di sini';
                     bar += '</p>';
-                    bar += '<a href="https://help-apk.myzuu.my.id/" class="link-blog">hubungi</a>';
+                    bar += '<a href="https://myzuu.webtoko.net/digital/194780" class="link-blog">hubungi</a>';
                 bar += '</div>';
             bar += '</a>';
         bar += '</div>';
