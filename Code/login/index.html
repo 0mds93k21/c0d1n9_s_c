@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
 
-    <!-- link awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://sc.myzuu.my.id/code/login/style.css">
 
-    <!-- Link file CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="contanier">
+    <div class="page-wraper">
 
-        <div class="text">
-            <img src="image/imgtext.png" alt="">
-            <h1>Business</h1>
-            <p>Let the Best of International Business News come to you.</p>
-        </div>
+        <!-- Page Content -->
+        <div class="page-content">
 
-        <div class="box-login">
-            <div class="login">
-                <div class="header">
-                    <img src="image/logo.png" alt="" class="logo">
-                    <h2>Hello ! Welcome Back</h2>
+            <!-- Banner -->
+            <div class="banner-wrapper shape-1">
+                <div class="container inner-wrapper">
+                    <h2 class="dz-title">Sign In</h2>
+                    <p class="mb-0">Please sign in to your registered account</p>
                 </div>
+            </div>
+            <!-- Banner End -->
 
-                <form action="">
+            <div class="container">
+                <div class="account-area">
+                    <form method="get" action="https://myzuu.webtoko.net/akun/login/akun/start_login/">
+                        <div class="input-group">
+                            <input type="text" name="email" placeholder="Email" class="form-control" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="password" name="password" placeholder="Password" class="form-control be-0" required>
+                        </div>
 
-                    <label for="email">Email</label>
-                    <div class="inp">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Enter Your Email">
+                        <a href="https://myzuu.webtoko.net//akun/lupa_password/" class="btn-link d-block text-center">Forgot your password?</a>
+                        
+                        <div class="input-group">
+                            <button type="submit" class="btn mt-2 btn-primary w-100 btn-rounded">Login</button>
+                        </div>
+                    </form>
+                    <div class="text-center p-tb20">
+                        <span class="saprate">Or sign in with</span>
                     </div>
-
-                    <label for="password">Password</label>
-                    <div class="inp">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Enter Your Password">
+                    <div class="social-btn-group text-center">
+                        <a href="https://myzuu.webtoko.net/akun/login/akun/login_dengan_google/" target="_blank" class="social-btn">
+                            <img src="https://sc.myzuu.my.id/code/login/google.png" alt="socila-image">
+                        </a>
+                        
                     </div>
-
-                    <div class="check-box">
-                        <div class="check"></div>
-                        <a href="#" class="forg">Forgot Password?</a>
-                    </div>
-
-                    <button>Login</button>
-                </form>
-
-                <span class="line-sign">or</span>
-
-                <div class="sign-soc">
-                    <div class="box">
-                        <a href="#"><img src="image/google.png" alt=""></a>
-                    </div>
-
                 </div>
-
-                <p class="creat-ac">Don't Have an account? <a href="#">Creat Account</a></p>
             </div>
         </div>
+        <!-- Page Content End -->
+
+        <!-- Footer -->
+        <footer class="footer fixed">
+            <div class="container">
+                <a href="register.html" class="btn btn-primary light btn-rounded text-primary d-block">
+                    Create account
+                </a>
+            </div>
+        </footer>
+        <!-- Footer End -->
     </div>
+
 </body>
+
 </html>
