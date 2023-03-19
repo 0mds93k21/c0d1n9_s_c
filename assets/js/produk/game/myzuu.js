@@ -60,23 +60,6 @@ const urlKategori = [
   },
 
   {
-    "nama": "Ragnarok Mobile",
-    "cekID": "ragnarokm",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/ragnarok/myzuu.png",
-    "kode": "ragnarokGame",
-    "categoryKe1": {
-      "nama": "Big Cat Coins",
-      "url": "",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
     "nama": "Free Fire",
     "cekID": "freefire",
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/free-fire/myzuu.jpg",
@@ -94,13 +77,13 @@ const urlKategori = [
   },
 
   {
-    "nama": "Arena Of Valor",
-    "cekID": "aov",
-    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
-    "kode": "1InputGame",
+    "nama": "Valorant",
+    "cekID": "valorant",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/valorant/myzuu.jpg",
+    "kode": "pagarGame",
     "categoryKe1": {
-      "nama": "Diamond",
-      "url": "",
+      "nama": "Points",
+      "url": "umum-417691",
       "data": "grid"
     },
     "categoryKe2": {
@@ -231,15 +214,31 @@ const urlKategori = [
     }
   },
 
+  {
+    "nama": "Ragnarok Mobile",
+    "cekID": "ragnarokm",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/ragnarok/myzuu.png",
+    "kode": "ragnarokGame",
+    "categoryKe1": {
+      "nama": "Big Cat Coins",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
 
   {
-    "nama": "Valorant",
-    "cekID": "valorant",
-    "gambar": "https://i.ibb.co/rvpVvLd/valorant-promo.jpg",
-    "kode": "pagarGame",
+    "nama": "Arena Of Valor",
+    "cekID": "aov",
+    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
+    "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamond",
-      "url": "telkomsel-transfer-350436",
+      "url": "",
       "data": "grid"
     },
     "categoryKe2": {
