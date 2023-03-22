@@ -11,7 +11,7 @@ const urlKategori = [
   {
     "nama": "Garena Shell",
     "cekID": "#",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/garena-shell/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/garena-shell/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Shell",
@@ -28,7 +28,7 @@ const urlKategori = [
   {
     "nama": "Mobile Legends",
     "cekID": "mobilelegends",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mobile-legend/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mobile-legend/myzuu.png",
     "kode": "2InputGame",
     "categoryKe1": {
       "nama": "Diamond",
@@ -45,7 +45,7 @@ const urlKategori = [
   {
     "nama": "Point Blank",
     "cekID": "pointblank",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/point-blank/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/point-blank/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "PB Cash",
@@ -62,7 +62,7 @@ const urlKategori = [
   {
     "nama": "Free Fire",
     "cekID": "freefire",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/free-fire/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/free-fire/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamond",
@@ -77,9 +77,45 @@ const urlKategori = [
   },
 
   {
+    "nama": "AU2 Mobile",
+    "cekID": "",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/au2-mobile/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamond",
+      "url": "umum-419253",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  
+
+  {
+    "nama": "Love Nikki",
+    "cekID": "",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamond",
+      "url": "love-nikki-413121",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
     "nama": "Valorant",
     "cekID": "valorant",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/valorant/myzuu.jpg",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/valorant/myzuu.png",
     "kode": "pagarGame",
     "categoryKe1": {
       "nama": "Points",
@@ -92,20 +128,20 @@ const urlKategori = [
       "data": "list"
     }
   },
-  
+
   {
-    "nama": "Love Nikki",
-    "cekID": "",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/love-nikki/myzuu.jpg",
-    "kode": "1InputGame",
+    "nama": "Genshin Impact",
+    "cekID": "gensin",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/genshin-impact/myzuu.png",
+    "kode": "genshinGame",
     "categoryKe1": {
       "nama": "Diamond",
-      "url": "love-nikki-413121",
+      "url": "umum-417696",
       "data": "grid"
     },
     "categoryKe2": {
-      "nama": "",
-      "url": "",
+      "nama": "Membership",
+      "url": "membership-417697",
       "data": "list"
     }
   },
@@ -130,43 +166,9 @@ const urlKategori = [
   },
 
   {
-    "nama": "COD Mobile",
-    "cekID": "callofduty",
-    "gambar": "https://i.ibb.co/YTWK4cC/codm.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "CP",
-      "url": "codm-412060",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
     "nama": "Hago",
     "cekID": "hago",
     "gambar": "https://i.ibb.co/j3HsywT/hagos.png",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "telkomsel-transfer-350436",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "AU2 Mobile",
-    "cekID": "au2m",
-    "gambar": "https://i.ibb.co/rZwNnkB/au2m.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamond",
@@ -193,23 +195,6 @@ const urlKategori = [
     "categoryKe2": {
       "nama": "#",
       "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Genshin Impact",
-    "cekID": "gensin",
-    "gambar": "https://i.ibb.co/NrS3zLJ/genshin.jpg",
-    "kode": "genshinGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "genshin-impact-411842",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "Membership",
-      "url": "membership-gi-411844",
       "data": "list"
     }
   },
