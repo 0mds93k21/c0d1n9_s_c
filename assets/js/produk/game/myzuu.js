@@ -15,7 +15,7 @@ const urlKategori = [
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Shell",
-      "url": "garena-shell-413515",
+      "url": "umum-420302",
       "data": "grid"
     },
     "categoryKe2": {
@@ -32,12 +32,12 @@ const urlKategori = [
     "kode": "2InputGame",
     "categoryKe1": {
       "nama": "Diamond",
-      "url": "umum-412544",
+      "url": "umum-420309",
       "data": "grid"
     },
     "categoryKe2": {
       "nama": "Membership",
-      "url": "membership-412546",
+      "url": "membership-420310",
       "data": "list"
     }
   },
@@ -49,7 +49,7 @@ const urlKategori = [
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "PB Cash",
-      "url": "point-blank-414296",
+      "url": "umum-420322",
       "data": "grid"
     },
     "categoryKe2": {
@@ -59,6 +59,24 @@ const urlKategori = [
     }
   },
 
+  {
+    "nama": "Ragnarok Mobile",
+    "cekID": "ragnarokm",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/ragnarok/myzuu.png",
+    "kode": "ragnarokGame",
+    "categoryKe1": {
+      "nama": "Big Cat Coins",
+      "url": "umum-420333",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "membership-420334",
+      "data": "list"
+    }
+  },
+
+    /**  Kategori Game /
   {
     "nama": "Free Fire",
     "cekID": "freefire",
@@ -161,8 +179,6 @@ const urlKategori = [
     }
   },
 
-  /**  Kategori Game /
-
   {
     "nama": "PUBG",
     "cekID": "#",
@@ -222,23 +238,6 @@ const urlKategori = [
     "categoryKe1": {
       "nama": "Diamond",
       "url": "telkomsel-transfer-350436",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Ragnarok Mobile",
-    "cekID": "ragnarokm",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/ragnarok/myzuu.png",
-    "kode": "ragnarokGame",
-    "categoryKe1": {
-      "nama": "Big Cat Coins",
-      "url": "",
       "data": "grid"
     },
     "categoryKe2": {

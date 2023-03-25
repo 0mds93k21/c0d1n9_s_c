@@ -8,7 +8,7 @@ let galleryarray = [
         id: 1,
         onclick: "getValue(dataTsel)",
         img: "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
-        text: "Voucher Telkomsel"
+        text: "Paket Data Telkomsel"
     },
 
     /* Belum Aktif /
