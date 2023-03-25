@@ -3,6 +3,28 @@ const aktivasi = "myzuu"
 
 const urlKategori = [
     {
+
+        "Telkomsel": {
+            "nama": "Voucher Telkomsel",
+            "gambar": "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
+            "data": [
+
+                {
+                    "nama": "Umum",
+                    "url": "umum-419919",
+                },
+                {
+                    "nama": "Bulk",
+                    "url": "bulk-419920",
+                },
+                {
+                    "nama": "Flash",
+                    "url": "flash-419921",
+                },
+
+            ]
+        },
+
         "Indosat": {
             "nama": "Voucher Indosat",
             "gambar": "https://i.postimg.cc/bw8jNrDc/images-2022-10-07-T132401-607.jpg",
@@ -15,23 +37,6 @@ const urlKategori = [
                 {
                     "nama": "",
                     "url": "",
-                },
-
-            ]
-        },
-
-        "Telkomsel": {
-            "nama": "Voucher Telkomsel",
-            "gambar": "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
-            "data": [
-
-                {
-                    "nama": "Flash",
-                    "url": "telkomsel-reguler-349764",
-                },
-                {
-                    "nama": "Owsem",
-                    "url": "telkomsel-reguler-349764",
                 },
 
             ]

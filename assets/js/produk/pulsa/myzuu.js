@@ -9,53 +9,50 @@
     // LINK KATEGORI
     const urlKategori = [
     {
-      "Indosat" :
-      {
-        "reguler" : "umum-412446",
-        "transfer": "pulsa-transfer-412447",
-        "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/indosat/myzuu.jpg",
-      },
-
       "Telkomsel" : {
-        "reguler" : "umum-412442",
-        "transfer": "pulsa-transfer-412443",
+        "reguler" : "umum-419930",
+        "transfer": "pulsa-transfer-419931",
         "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/telkomsel/myzuu.jpg",
       },
 
-      "Three" : {
-        "reguler" : "umum-412471",
-        "transfer": "pulsa-transfer-412472",
-        "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/three/myzuu.jpg",
-      },
-
-      "XL Axiata" : {
-        "reguler" : "umum-412474",
-        "transfer": "pulsa-transfer-412475",
-        "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/xl/myzuu.jpg",
+      "Indosat" :
+      {
+        "reguler" : "umum-419940",
+        "transfer": "pulsa-transfer-419941",
+        "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/indosat/myzuu.jpg",
       },
 
       "Axis" : {
-        "reguler" : "umum-412465",
-        "transfer": "pulsa-transfer-412466",
+        "reguler" : "umum-420108",
+        "transfer": "pulsa-transfer-420109",
         "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/axis/myzuu.jpg",
       },
 
       "Smartfren" : {
-        "reguler" : "umum-412468",
-        "transfer": "pulsa-transfer-412469",
+        "reguler" : "umum-420164",
+        "transfer": "pulsa-transfer-420165",
         "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/smartfren/myzuu.jpg",
       },
 
+      "Three" : {
+        "reguler" : "umum-420220",
+        "transfer": "pulsa-transfer-420221",
+        "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/three/myzuu.jpg",
+      },
+
+      "XL Axiata" : {
+        "reguler" : "umum-420271",
+        "transfer": "pulsa-transfer-420272",
+        "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/xl/myzuu.jpg",
+      },
+
       "By.U" : {
-        "reguler" : "pulsa-by-u-412489",
+        "reguler" : "umum-420275",
         "gambar" : "https://sc.myzuu.my.id/assets/img/produk/pulsa/by.u/myzuu.jpg",
       },
 
     }
     ]
-
-
-
 
     //---------- Jangan Dirubah ----------//
 

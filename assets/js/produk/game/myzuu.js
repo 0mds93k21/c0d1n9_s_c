@@ -77,6 +77,23 @@ const urlKategori = [
   },
 
   {
+    "nama": "Arena Of Valor",
+    "cekID": "aov",
+    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Vouchers",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
     "nama": "AU2 Mobile",
     "cekID": "",
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/au2-mobile/myzuu.png",
@@ -92,8 +109,6 @@ const urlKategori = [
       "data": "list"
     }
   },
-
-  
 
   {
     "nama": "Love Nikki",
@@ -166,6 +181,23 @@ const urlKategori = [
   },
 
   {
+    "nama": "COD Mobile",
+    "cekID": "callofduty",
+    "gambar": "https://i.ibb.co/YTWK4cC/codm.jpg",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "CP",
+      "url": "codm-412060",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
     "nama": "Hago",
     "cekID": "hago",
     "gambar": "https://i.ibb.co/j3HsywT/hagos.png",
@@ -206,23 +238,6 @@ const urlKategori = [
     "kode": "ragnarokGame",
     "categoryKe1": {
       "nama": "Big Cat Coins",
-      "url": "",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Arena Of Valor",
-    "cekID": "aov",
-    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "Diamond",
       "url": "",
       "data": "grid"
     },

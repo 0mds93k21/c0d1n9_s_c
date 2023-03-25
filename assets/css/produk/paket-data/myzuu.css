@@ -491,6 +491,10 @@ label {
     font-size: 18px
 }
 
+.paket-myzuu {
+    padding-left: 10px;
+}
+
 .cardkat,
 .cardSubkat {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15)

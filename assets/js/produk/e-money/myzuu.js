@@ -11,7 +11,7 @@ const aktivasi = "myzuu"
 const urlKategori = [
     {
         "nama": "Gopay",
-        "url": "",
+        "url": "gopay-419255",
         "cekID": "gopay",
         "gambar": "https://sc.myzuu.my.id/assets/img/produk/e-money/gopay/myzuu.png"
     },
