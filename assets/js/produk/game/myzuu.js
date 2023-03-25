@@ -31,7 +31,7 @@ const urlKategori = [
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mobile-legend/myzuu.png",
     "kode": "2InputGame",
     "categoryKe1": {
-      "nama": "Diamond",
+      "nama": "Diamonds",
       "url": "umum-420309",
       "data": "grid"
     },
@@ -76,7 +76,6 @@ const urlKategori = [
     }
   },
 
-    /**  Kategori Game /
   {
     "nama": "Free Fire",
     "cekID": "freefire",
@@ -84,12 +83,12 @@ const urlKategori = [
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamond",
-      "url": "umum-414306",
+      "url": "umum-420356",
       "data": "grid"
     },
     "categoryKe2": {
       "nama": "Membership",
-      "url": "membership-414307",
+      "url": "membership-420357",
       "data": "list"
     }
   },
@@ -97,11 +96,11 @@ const urlKategori = [
   {
     "nama": "Arena Of Valor",
     "cekID": "aov",
-    "gambar": "https://i.ibb.co/Xzg6VHS/aov-promo.jpg",
+    "gambar": "/assets/img/produk/game/aov/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Vouchers",
-      "url": "",
+      "url": "umum-420362",
       "data": "grid"
     },
     "categoryKe2": {
@@ -117,8 +116,8 @@ const urlKategori = [
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/au2-mobile/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
-      "nama": "Diamond",
-      "url": "umum-419253",
+      "nama": "Diamonds",
+      "url": "umum-420376",
       "data": "grid"
     },
     "categoryKe2": {
@@ -127,6 +126,25 @@ const urlKategori = [
       "data": "list"
     }
   },
+
+  {
+    "nama": "COD Mobile",
+    "cekID": "callofduty",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/call-of-duty-mobile/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "CP",
+      "url": "umum-420380",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+    /**  Kategori Game /
 
   {
     "nama": "Love Nikki",
@@ -192,23 +210,6 @@ const urlKategori = [
     "categoryKe2": {
       "nama": "Membership",
       "url": "",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "COD Mobile",
-    "cekID": "callofduty",
-    "gambar": "https://i.ibb.co/YTWK4cC/codm.jpg",
-    "kode": "1InputGame",
-    "categoryKe1": {
-      "nama": "CP",
-      "url": "codm-412060",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
       "data": "list"
     }
   },
