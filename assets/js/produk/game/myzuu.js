@@ -96,7 +96,7 @@ const urlKategori = [
   {
     "nama": "Arena Of Valor",
     "cekID": "aov",
-    "gambar": "/assets/img/produk/game/aov/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/aov/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Vouchers",
