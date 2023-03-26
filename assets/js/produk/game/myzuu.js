@@ -147,7 +147,7 @@ const urlKategori = [
   {
     "nama": "Laplace M",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/laplace-m/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/laplace-m/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Spirals",
@@ -164,7 +164,7 @@ const urlKategori = [
   {
     "nama": "Lords Mobile",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/lords-mobile/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/lords-mobile/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamonds",
@@ -181,7 +181,7 @@ const urlKategori = [
   {
     "nama": "Mangatoon",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/mangatoon/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/mangatoon/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Coins",
@@ -198,7 +198,7 @@ const urlKategori = [
   {
     "nama": "Speed Drifters",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/speed-drifters/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/speed-drifters/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Diamonds",
@@ -215,7 +215,7 @@ const urlKategori = [
   {
     "nama": "LifeAfter Credits",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/lifeafter/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/lifeafter/myzuu.png",
     "kode": "pagarGame",
     "categoryKe1": {
       "nama": "Credits",
@@ -232,7 +232,7 @@ const urlKategori = [
   {
     "nama": "Marvel Super War",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/marvel-super-war/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/marvel-super-war/myzuu.png",
     "kode": "pagarGame",
     "categoryKe1": {
       "nama": "Star Credits",
@@ -267,7 +267,7 @@ const urlKategori = [
   {
     "nama": "Dragon Raja",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/dragon-raja/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/dragon-raja/myzuu.png",
     "kode": "pagarGame",
     "categoryKe1": {
       "nama": "Coupons",
@@ -284,7 +284,7 @@ const urlKategori = [
   {
     "nama": "Sausage Man",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/sausage-man/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/sausage-man/myzuu.png",
     "kode": "pagarGame",
     "categoryKe1": {
       "nama": "Candles",
@@ -318,7 +318,7 @@ const urlKategori = [
   {
     "nama": "Hyper Front",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/hyper-front/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/hyper-front/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Star Quartz",
@@ -335,7 +335,7 @@ const urlKategori = [
   {
     "nama": "Super Sus",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/super-sus/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/super-sus/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Golden Star",
@@ -352,7 +352,7 @@ const urlKategori = [
   {
     "nama": "Omega Legends",
     "cekID": "",
-    "gambar": "/assets/img/produk/game/omega-legends/myzuu.png",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/omega-legends/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
       "nama": "Golden Star",
