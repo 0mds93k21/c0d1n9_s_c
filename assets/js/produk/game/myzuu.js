@@ -144,6 +144,228 @@ const urlKategori = [
     }
   },
 
+  {
+    "nama": "Laplace M",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/laplace-m/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Spirals",
+      "url": "umum-420963",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Lords Mobile",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/lords-mobile/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamonds",
+      "url": "umum-420966",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Mangatoon",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/mangatoon/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Coins",
+      "url": "umum-420971",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Speed Drifters",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/speed-drifters/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Diamonds",
+      "url": "umum-420980",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "LifeAfter Credits",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/lifeafter/myzuu.png",
+    "kode": "pagarGame",
+    "categoryKe1": {
+      "nama": "Credits",
+      "url": "umum-421005",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Marvel Super War",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/marvel-super-war/myzuu.png",
+    "kode": "pagarGame",
+    "categoryKe1": {
+      "nama": "Star Credits",
+      "url": "umum-421024",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+
+  {
+    "nama": "Valorant",
+    "cekID": "valorant",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/valorant/myzuu.png",
+    "kode": "pagarGame",
+    "categoryKe1": {
+      "nama": "Points",
+      "url": "umum-420987",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "#",
+      "url": "#",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Dragon Raja",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/dragon-raja/myzuu.png",
+    "kode": "pagarGame",
+    "categoryKe1": {
+      "nama": "Coupons",
+      "url": "umum-421035",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "membership-421036",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Sausage Man",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/sausage-man/myzuu.png",
+    "kode": "pagarGame",
+    "categoryKe1": {
+      "nama": "Candles",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Genshin Impact",
+    "cekID": "gensin",
+    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/genshin-impact/myzuu.png",
+    "kode": "genshinGame",
+    "categoryKe1": {
+      "nama": "Genesis Crystals",
+      "url": "umum-421060",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "membership-421061",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Hyper Front",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/hyper-front/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Star Quartz",
+      "url": "umum-421060",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Super Sus",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/super-sus/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Golden Star",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "",
+      "data": "list"
+    }
+  },
+
+  {
+    "nama": "Omega Legends",
+    "cekID": "",
+    "gambar": "/assets/img/produk/game/omega-legends/myzuu.png",
+    "kode": "1InputGame",
+    "categoryKe1": {
+      "nama": "Golden Star",
+      "url": "",
+      "data": "grid"
+    },
+    "categoryKe2": {
+      "nama": "Membership",
+      "url": "",
+      "data": "list"
+    }
+  },
+
     /**  Kategori Game /
 
   {
@@ -159,40 +381,6 @@ const urlKategori = [
     "categoryKe2": {
       "nama": "",
       "url": "",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Valorant",
-    "cekID": "valorant",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/valorant/myzuu.png",
-    "kode": "pagarGame",
-    "categoryKe1": {
-      "nama": "Points",
-      "url": "umum-417691",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "#",
-      "url": "#",
-      "data": "list"
-    }
-  },
-
-  {
-    "nama": "Genshin Impact",
-    "cekID": "gensin",
-    "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/genshin-impact/myzuu.png",
-    "kode": "genshinGame",
-    "categoryKe1": {
-      "nama": "Diamond",
-      "url": "umum-417696",
-      "data": "grid"
-    },
-    "categoryKe2": {
-      "nama": "Membership",
-      "url": "membership-417697",
       "data": "list"
     }
   },
