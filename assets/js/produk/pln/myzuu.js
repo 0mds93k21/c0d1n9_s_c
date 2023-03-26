@@ -16,7 +16,7 @@
     const urlKategori = [
       {
         "nama": "TOKEN",
-        "url": "token-listrik-416227",
+        "url": "token-421105",
         "cekID": "pln"
       }
     ]
