@@ -288,7 +288,7 @@ const urlKategori = [
     "kode": "pagarGame",
     "categoryKe1": {
       "nama": "Candles",
-      "url": "",
+      "url": "umum-421054",
       "data": "grid"
     },
     "categoryKe2": {
@@ -338,13 +338,13 @@ const urlKategori = [
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/super-sus/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
-      "nama": "Golden Star",
-      "url": "",
+      "nama": "GOldstar",
+      "url": "umum-421071",
       "data": "grid"
     },
     "categoryKe2": {
       "nama": "Membership",
-      "url": "",
+      "url": "membership-421073",
       "data": "list"
     }
   },
@@ -355,8 +355,8 @@ const urlKategori = [
     "gambar": "https://sc.myzuu.my.id/assets/img/produk/game/omega-legends/myzuu.png",
     "kode": "1InputGame",
     "categoryKe1": {
-      "nama": "Golden Star",
-      "url": "",
+      "nama": "Gold",
+      "url": "umum-421093",
       "data": "grid"
     },
     "categoryKe2": {
