@@ -349,6 +349,8 @@ const urlKategori = [
     }
   },
 
+  /**  Kategori Game /
+
   {
     "nama": "Omega Legends",
     "cekID": "",
@@ -365,8 +367,6 @@ const urlKategori = [
       "data": "list"
     }
   },
-
-    /**  Kategori Game /
 
   {
     "nama": "Love Nikki",
