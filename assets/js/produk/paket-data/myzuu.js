@@ -13,14 +13,6 @@ const urlKategori = [
                     "nama": "Umum",
                     "url": "umum-419919",
                 },
-                {
-                    "nama": "Bulk",
-                    "url": "bulk-419920",
-                },
-                {
-                    "nama": "Flash",
-                    "url": "flash-419921",
-                },
 
             ]
         },
