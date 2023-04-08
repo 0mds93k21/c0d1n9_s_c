@@ -3,7 +3,7 @@ const aktivasi = "myzuu"
 
 const urlKategori = [
     {
-
+        
         "Telkomsel": {
             "nama": "Voucher Telkomsel",
             "gambar": "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
