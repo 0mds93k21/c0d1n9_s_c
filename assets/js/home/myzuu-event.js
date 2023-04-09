@@ -1,7 +1,7 @@
 $(function () {
     var bar = '';
 
-    bar += '<a href="#home">';
+    bar += '<a href="https://z3t4-4pp-n3w-v3rs10n.vercel.app/dashboard/">';
         bar += '<button class="button-myzuu-produk2">';
             bar += '<img src="https://sc.myzuu.my.id/assets/img/info/event/1.png" alt="Myzuu">';
             bar += '<p>Weeken Deal Promo Paket data Telkomsel</p>';
