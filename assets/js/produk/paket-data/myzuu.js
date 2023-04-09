@@ -5,13 +5,13 @@ const urlKategori = [
     {
         
         "Telkomsel": {
-            "nama": "Voucher Telkomsel",
+            "nama": "Telkomsel",
             "gambar": "https://i.postimg.cc/rFZpDSTX/images-2022-10-07-T132212-320.jpg",
             "data": [
 
                 {
-                    "nama": "Umum",
-                    "url": "umum-419919",
+                    "nama": "bulk",
+                    "url": "bulk-428810",
                 },
 
             ]

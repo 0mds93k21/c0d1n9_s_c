@@ -5,8 +5,6 @@ let filterarray = [];
 
 let galleryarray = [
 
-    /* Belum Aktif /
-
     {
         id: 1,
         onclick: "getValue(dataTsel)",
@@ -14,6 +12,7 @@ let galleryarray = [
         text: "Paket Data Telkomsel"
     },
     
+     /* Belum Aktif /
     {
         id: 2,
         onclick: "getValue(dataIsat)",
