@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Myzuu</title>
-    <link rel="stylesheet" href="/assets/css/home/myzuu.css">
+    <link rel="stylesheet" href="https://sc.myzuu.my.id/assets/css/home/myzuu.css">
     <link href="https://codingasik.my.id/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--===== Boxicons CSS =====-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
         <div class="notification">
             <a href="https://myzuu.webtoko.net/akun/?page=notifikasi">
                 <button type="button" class="btn btn-primary position-relative myzuu-notice">
-                    <i class="far fa-bell"></i>
+                    <i class="ri-notification-2-fill"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                         style="margin-left: -15px;">
                         {{total_notif}}
@@ -46,10 +46,15 @@
             <div class="image-wallet">
                 <img src="https://sc.myzuu.my.id/assets/img/icon/wallet.png" alt="Myzuu">
             </div>
-            <div class="text-wallet">
+            <div class="text-wallet" id="div-with-bg">
                 <div style="display: flex;">
                     <h5>Rp </h5>
-                    <h5 id="saldo_user" class="skeleton">{{saldo_user}}</h5>
+                    <h5 id="saldo_user" class="skeleton">
+                        {{saldo_user}}
+                        <a href="https://mzyuu.webtoko.net/refresh_saldo" style="text-decoration: none !important;">
+                            <i class="ri-restart-line" style="color: #000;"></i>
+                        </a>
+                    </h5>
                 </div>
                 <div style="display: flex;">
                     <p id="myzuu_poin" class="skeleton">{{poin_member}}</p>
@@ -64,17 +69,11 @@
 
 
         <div class="box-myzuu2 ">
-            <div class="myzuu-flex">
-                <div class="tab">
-                    <button class="myzuutab active skeleton" onclick="openCity(event, 'myzuu-tab1')">Top Up</button>
-                    <button class="myzuutab skeleton" onclick="openCity(event, 'myzuu-tab2')">Tagihan</button>
-                </div>
-            </div>
-
 
             <!-- MENU 1-->
             <div id="myzuu-tab1" class="tabcontent" style="display: block;padding: 0px;">
                 <div class="myzuu-grid4" style="padding: 0px;">
+
                     <a href="https://myzuu.webtoko.net/digital/192392">
                         <button class="menu-list">
                             <img src="https://sc.myzuu.my.id/assets/img/icon/pulsa.png" class="img-myzuu" alt="Myzuu">
@@ -82,18 +81,11 @@
                         </button>
                     </a>
 
-                    <a href="">
+                    <a href="https://myzuu.webtoko.net/digital/200315">
                         <button class="menu-list">
                             <img src="https://sc.myzuu.my.id/assets/img/icon/paket-data.png" class="img-myzuu"
                                 alt="Myzuu">
                             <p>Paket Data</p>
-                        </button>
-                    </a>
-
-                    <a href="https://myzuu.webtoko.net/digital/194778">
-                        <button class="menu-list">
-                            <img src="https://sc.myzuu.my.id/assets/img/icon/pln.png" class="img-myzuu" alt="Myzuu">
-                            <p>Token Listrik</p>
                         </button>
                     </a>
 
@@ -104,50 +96,20 @@
                         </button>
                     </a>
 
-                    <a href="https://myzuu.webtoko.net/digital/192952">
-                        <button class="menu-list">
-                            <img src="https://sc.myzuu.my.id/assets/img/icon/e-money.png" class="img-myzuu" alt="Myzuu">
-                            <p>E-Money</p>
-                        </button>
-                    </a>
-
-                    <a href="">
-                        <button class="menu-list">
-                            <img src="https://sc.myzuu.my.id/assets/img/icon/voucher.png" class="img-myzuu" alt="Myzuu">
-                            <p>Voucher</p>
-                        </button>
-                    </a>
-
-                    <a href="https://myzuu.webtoko.net/digital/192933">
-                        <button class="menu-list">
-                            <img src="https://sc.myzuu.my.id/assets/img/icon/streaming.png" class="img-myzuu"
-                                alt="Myzuu">
-                            <p>Streaming</p>
-                        </button>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- MENU 2 -->
-            <div id="myzuu-tab2" class="tabcontent">
-                <div class="myzuu-grid4" style="padding: 0px;">
                     <a href="https://myzuu.webtoko.net/digital/194778">
                         <button class="menu-list">
                             <img src="https://sc.myzuu.my.id/assets/img/icon/pln.png" class="img-myzuu" alt="Myzuu">
-                            <p>Token PLN</p>
+                            <p>Token Listrik</p>
                         </button>
                     </a>
 
                 </div>
             </div>
-            <!-- MENU 2 -->
 
         </div>
 
-
         <!-- Slide -->
-        <iframe src="/test.html" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+        <iframe src="https://sc.myzuu.my.id/assets/vendors/slider/" width="100%" height="95%" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no" style="z-index: -1;"></iframe>
         <!-- Slide -->
 
         <!-- CARD SLIDER -->
@@ -212,7 +174,8 @@
             <!-- custom -->
             <script src="https://sc.myzuu.my.id/assets/js/home/myzuu-event.js"></script>
             <script src="https://sc.myzuu.my.id/assets/js/home/myzuu-blog.js"></script>
-
+            <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="ObLzyl0a" data-limit="5"
+                data-page-id="1307"></script>
 </body>
 
 </html>
