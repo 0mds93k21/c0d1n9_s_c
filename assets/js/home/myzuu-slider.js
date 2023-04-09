@@ -4,6 +4,12 @@ $(function () {
     bar += '<div class="swiper-container swiper-slider-center">';
         bar += ' <div class="swiper-wrapper">';
 
+        bar += ' <div class="swiper-slide">';
+                bar += ' <a href="https://myzuu.webtoko.net/digital/200540">';
+                    bar += ' <img src="https://sc.myzuu.my.id/assets/img/home/slider/starlight-april.png" alt="Myzuu" />';
+                bar += ' </a>';
+            bar += ' </div>';
+            
             bar += ' <div class="swiper-slide">';
                 bar += ' <a href="https://myzuu.webtoko.net/digital/200540">';
                     bar += ' <img src="https://sc.myzuu.my.id/assets/img/home/slider/1.png" alt="Myzuu" />';
