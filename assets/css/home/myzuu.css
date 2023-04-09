@@ -465,6 +465,13 @@ div.scrollmenu a:hover {
     background-color: #fff;
 }
 
+div.scrollmenu p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
 
 
 .title__el__menarik {
