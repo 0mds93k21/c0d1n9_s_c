@@ -1,7 +1,7 @@
 $(function () {
     var bar = '';
 
-    bar += '<a href="#home">';
+    bar += '<a href="https://myzuu.webtoko.net/digital/200540">';
         bar += '<button class="button-myzuu-produk2">';
             bar += '<img src="https://sc.myzuu.my.id/assets/img/info/event/1.png" alt="Myzuu">';
             bar += '<p>Skin Miya "Allstar Themed"</p>';
