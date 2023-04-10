@@ -28,3 +28,13 @@ $(".tab").on("click","button",function(e){
     "width": activeWidth + "px"
   });
 });
+
+
+
+const allSkeleton = document.querySelectorAll('.skeleton')
+
+window.addEventListener('load', function() {
+  allSkeleton.forEach(item=> {
+    item.classList.remove('skeleton')
+  })
+})
