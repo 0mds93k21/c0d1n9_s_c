@@ -10,8 +10,16 @@ const urlKategori = [
             "data": [
 
                 {
-                    "nama": "bulk",
+                    "nama": "Bulk",
                     "url": "bulk-428810",
+                },
+                {
+                    "nama": "Flash",
+                    "url": "flash-429123",
+                },
+                {
+                    "nama": "Mini",
+                    "url": "mini-429129",
                 },
 
             ]
